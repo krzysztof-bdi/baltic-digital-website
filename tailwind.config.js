@@ -1,27 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./*.html",
-    "./src/**/*.{html,js}",
-  ],
+  content: ["./*.html"],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
       colors: {
-        brand: {
-          light: "#6C63FF",
-          DEFAULT: "#4B46E6",
-          dark: "#3A37B8",
-        },
+        'baltic-navy': '#0A192F',
+        'dark-steel': '#1F2937',
+        'cyber-turq': '#00F6D2',
+        'steel-gray': '#9CA3AF',
       },
-      transitionProperty: {
-        height: "height",
-        opacity: "opacity",
-        transform: "transform",
+      fontFamily: {
+        sans: ['Lato', 'sans-serif'],
+        heading: ['Geist Sans', 'sans-serif'],
       },
     },
   },
   plugins: [],
-};
+}
