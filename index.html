@@ -1,86 +1,109 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Projekt z nowoczesnym hamburger menu z TailwindCSS" />
-  <title>Nowoczesne Menu Hamburger</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BDI - Baltic Digital Institute</title>
   <link href="dist/output.css" rel="stylesheet">
 </head>
-<body class="font-poppins bg-gray-50 text-gray-900">
+<body class="antialiased bg-baltic-navy text-white font-sans">
 
   <!-- HEADER -->
-  <header class="bg-white shadow-md fixed w-full z-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center">
-          <a href="#" class="text-2xl font-bold text-brand-dark">MojaStrona</a>
-        </div>
-        <nav class="hidden md:flex space-x-6">
-          <a href="#" class="hover:text-brand-dark transition">Home</a>
-          <a href="#" class="hover:text-brand-dark transition">O mnie</a>
-          <a href="#" class="hover:text-brand-dark transition">Portfolio</a>
-          <a href="#" class="hover:text-brand-dark transition">Kontakt</a>
-        </nav>
-        <!-- Hamburger Button -->
-        <div class="md:hidden flex items-center">
-          <button id="menu-button" class="relative w-8 h-8 flex flex-col justify-between items-center group">
-            <span class="block h-1 w-full bg-brand-dark rounded transform transition duration-300 ease-in-out group-hover:bg-brand-light"></span>
-            <span class="block h-1 w-full bg-brand-dark rounded transform transition duration-300 ease-in-out group-hover:bg-brand-light"></span>
-            <span class="block h-1 w-full bg-brand-dark rounded transform transition duration-300 ease-in-out group-hover:bg-brand-light"></span>
-          </button>
-        </div>
+  <header class="bg-dark-steel shadow-md fixed w-full z-20">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+      <a href="index.html" class="flex items-center font-heading text-white text-2xl font-bold">BDi</a>
+      <nav class="hidden md:flex space-x-8 items-center">
+        <a href="rozwiazania.html" class="hover:text-cyber-turq transition">Rozwiązania</a>
+        <a href="o-nas.html" class="hover:text-cyber-turq transition">O Nas</a>
+        <a href="kontakt.html" class="hover:text-cyber-turq transition">Kontakt</a>
+      </nav>
+      <!-- Hamburger -->
+      <div class="md:hidden">
+        <button id="menu-button" class="relative w-8 h-8 flex flex-col justify-between items-center group">
+          <span class="block h-1 w-full bg-white rounded transition"></span>
+          <span class="block h-1 w-full bg-white rounded transition"></span>
+          <span class="block h-1 w-full bg-white rounded transition"></span>
+        </button>
       </div>
     </div>
-
     <!-- MOBILE MENU -->
-    <div id="mobile-menu" class="overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out md:hidden bg-brand-light">
-      <a href="#" class="block px-6 py-3 text-white hover:bg-brand-dark opacity-0 transform translate-y-4 transition-all duration-500">Home</a>
-      <a href="#" class="block px-6 py-3 text-white hover:bg-brand-dark opacity-0 transform translate-y-4 transition-all duration-500 delay-75">O mnie</a>
-      <a href="#" class="block px-6 py-3 text-white hover:bg-brand-dark opacity-0 transform translate-y-4 transition-all duration-500 delay-150">Portfolio</a>
-      <a href="#" class="block px-6 py-3 text-white hover:bg-brand-dark opacity-0 transform translate-y-4 transition-all duration-500 delay-225">Kontakt</a>
+    <div id="mobile-menu" class="overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out md:hidden bg-dark-steel">
+      <a href="rozwiazania.html" class="block px-6 py-3 text-white hover:bg-baltic-navy">Rozwiązania</a>
+      <a href="o-nas.html" class="block px-6 py-3 text-white hover:bg-baltic-navy">O Nas</a>
+      <a href="kontakt.html" class="block px-6 py-3 text-white hover:bg-baltic-navy">Kontakt</a>
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main class="pt-20">
-    <section class="max-w-7xl mx-auto p-6">
-      <h1 class="text-3xl font-bold mb-4 text-brand-dark">Witaj na mojej stronie</h1>
-      <p class="text-lg text-gray-700">Teraz Twoje hamburger menu ma nowoczesny styl, animacje i paletę kolorów premium.</p>
-    </section>
-  </main>
+  <!-- HERO -->
+  <section class="pt-32 pb-24 text-center bg-gradient-to-b from-baltic-navy to-dark-steel">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="font-heading text-5xl md:text-6xl font-black">Tworzymy cyfrową przyszłość</h1>
+      <p class="mt-6 text-lg text-steel-gray">AI i Cyberbezpieczeństwo dla Europy jutra.</p>
+      <div class="mt-10 flex flex-col md:flex-row justify-center gap-6">
+        <a href="rozwiazania.html" class="bg-cyber-turq text-baltic-navy font-bold py-3 px-6 rounded-md text-lg hover:opacity-90 transition">Nasze Rozwiązania</a>
+        <a href="o-nas.html" class="border border-cyber-turq text-cyber-turq py-3 px-6 rounded-md text-lg hover:bg-cyber-turq hover:text-baltic-navy transition">Poznaj nas</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- TRZY FILARY -->
+  <section class="py-20 container mx-auto px-6">
+    <h2 class="text-center font-heading text-3xl font-bold mb-12">Nasze 3 filary</h2>
+    <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+      <div class="bg-dark-steel p-6 rounded-lg text-center">
+        <h3 class="font-heading text-xl font-bold mb-4">AI dla Biznesu</h3>
+        <p class="text-steel-gray">Automatyzacja, predykcja i inteligentne wsparcie decyzji.</p>
+      </div>
+      <div class="bg-dark-steel p-6 rounded-lg text-center">
+        <h3 class="font-heading text-xl font-bold mb-4">Cyberbezpieczeństwo</h3>
+        <p class="text-steel-gray">Ochrona systemów, audyty i monitoring w czasie rzeczywistym.</p>
+      </div>
+      <div class="bg-dark-steel p-6 rounded-lg text-center">
+        <h3 class="font-heading text-xl font-bold mb-4">Edukacja</h3>
+        <p class="text-steel-gray">Szkolenia i wsparcie w budowie kompetencji cyfrowych.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="py-20 bg-dark-steel">
+    <h2 class="text-center font-heading text-2xl font-bold mb-10">Zaufali nam</h2>
+    <div class="flex flex-wrap justify-center gap-10 max-w-5xl mx-auto">
+      <img src="assets/svg/logo1.svg" alt="Logo partnera 1" class="h-12 opacity-80 hover:opacity-100 transition">
+      <img src="assets/svg/logo2.svg" alt="Logo partnera 2" class="h-12 opacity-80 hover:opacity-100 transition">
+      <img src="assets/svg/logo3.svg" alt="Logo partnera 3" class="h-12 opacity-80 hover:opacity-100 transition">
+      <img src="assets/svg/logo4.svg" alt="Logo partnera 4" class="h-12 opacity-80 hover:opacity-100 transition">
+    </div>
+  </section>
+
+  <!-- SKRÓT O NAS -->
+  <section class="py-20 container mx-auto px-6 text-center max-w-3xl">
+    <h2 class="font-heading text-3xl font-bold mb-6">Kim jesteśmy?</h2>
+    <p class="text-steel-gray mb-8">Baltic Digital Institute to zespół specjalistów, którzy łączą AI i cyberbezpieczeństwo, by wspierać transformację cyfrową Europy.</p>
+    <a href="o-nas.html" class="bg-cyber-turq text-baltic-navy font-bold py-3 px-6 rounded-md text-lg hover:opacity-90 transition">Poznaj naszą historię</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark-steel mt-20">
+    <div class="max-w-7xl mx-auto px-6 py-12 text-center text-steel-gray text-sm">
+      <p>&copy; 2025 Baltic Digital Institute. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU SCRIPT -->
   <script>
-    const menuButton = document.getElementById('menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const menuLinks = mobileMenu.querySelectorAll("a");
-
-    menuButton.addEventListener('click', () => {
-      menuButton.classList.toggle('open');
-      mobileMenu.classList.toggle('max-h-96');
-      mobileMenu.classList.toggle('opacity-100');
-
-      menuLinks.forEach((link, index) => {
-        if (mobileMenu.classList.contains('opacity-100')) {
-          link.classList.remove("opacity-0", "translate-y-4");
-        } else {
-          link.classList.add("opacity-0", "translate-y-4");
-        }
-      });
+    const menuButton = document.getElementById("menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("max-h-96");
+      mobileMenu.classList.toggle("opacity-100");
+      menuButton.classList.toggle("open");
     });
   </script>
-
   <style>
-    /* Animacja hamburgera na krzyżyk */
-    #menu-button.open span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-    #menu-button.open span:nth-child(2) {
-      opacity: 0;
-    }
-    #menu-button.open span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
+    #menu-button.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    #menu-button.open span:nth-child(2) { opacity: 0; }
+    #menu-button.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
   </style>
 </body>
 </html>
