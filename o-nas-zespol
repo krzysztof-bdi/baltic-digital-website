@@ -1,118 +1,187 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nasz Zespół — Baltic Digital Institute</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zespół — Baltic Digital Institute</title>
+  <meta name="description" content="Zespół Baltic Digital Institute — pracownicy operacyjni, Rada Programowa, Rada Nadzorcza oraz agenci AI (Baltic Brain)." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>:root{--baltic-navy:#0A192F;--cyber-turq:#64FFDA;--dark-steel:#112240;--muted:#8892B0;--text:#F9FAFB}body{font-family:'Lato',sans-serif;background:var(--baltic-navy);color:var(--text)}h1,h2,h3{font-family:'Geist Sans'}.card{background:var(--dark-steel);border-radius:12px}</style>
 </head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo">BDI</a>
-      <ul>
-        <li><a href="rozwiazania-dla-biznesu.html">Rozwiązania</a></li>
-        <li><a href="inicjatywy.html">Inicjatywy</a></li>
-        <li><a href="baza-wiedzy.html">Baza Wiedzy</a></li>
-        <li><a href="o-nas.html">O nas</a></li>
-        <li><a href="o-nas-zespol.html" class="active">Zespół</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
+<body class="min-h-screen flex flex-col">
+
+  <header class="bg-[color:var(--dark-steel)]">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/svg/Logo main.svg" alt="Logo Baltic Digital Institute" class="h-8">
+        <span class="text-[color:var(--cyber-turq)] font-bold">Baltic Digital Institute</span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="index.html">Start</a>
+        <a href="rozwiazania-dla-biznesu.html">Rozwiązania</a>
+        <a href="o-nas.html">O nas</a>
+        <a href="o-nas-zespol.html" class="text-[color:var(--cyber-turq)] font-semibold">Zespół</a>
+        <a href="baza-wiedzy.html">Baza wiedzy</a>
+        <a href="kontakt.html" class="px-3 py-2 border border-[color:var(--cyber-turq)] rounded">Kontakt</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h1>Nasz Zespół</h1>
-    <p>Ludzie i sztuczna inteligencja współtworzący Baltic Digital Institute.</p>
-  </section>
+  <main class="flex-grow">
+    <section class="py-12 text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-3xl font-black mb-2">Nasz Zespół</h1>
+        <p class="text-[color:var(--muted)]">Pracownicy BDI — osoby, które prowadzą codzienne działania operacyjne. Poniżej także Rady i Baltic Brain (agenci AI).</p>
+      </div>
+    </section>
 
-  <!-- Pracownicy BDI -->
-  <section class="content">
-    <h2>Pracownicy BDI</h2>
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="img/krzysztof.jpg" alt="Krzysztof Rek">
-        <h3>Krzysztof Rek</h3>
-        <p>Lider Strategiczny, Architekt AI, Prezes Zarządu</p>
+    <!-- PRACOWNICY BDI (górna sekcja) -->
+    <section class="max-w-6xl mx-auto px-4 py-8">
+      <h2 class="text-2xl font-bold mb-6">Pracownicy BDI (zespół operacyjny)</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Krzysztof Rek -->
+        <article class="card p-6 text-center">
+          <img src="assets/img/krzysztof-rek.jpg" alt="Krzysztof Rek — Prezes Zarządu" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Krzysztof Rek</h3>
+          <p class="text-[color:var(--muted)]">Prezes Zarządu — Lider strategiczny, Architekt Systemu Baltic.</p>
+        </article>
+
+        <!-- Monika Zawadzka -->
+        <article class="card p-6 text-center">
+          <img src="assets/img/monika-zawadzka.jpg" alt="Monika Zawadzka — Wiceprezes Zarządu" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Monika Zawadzka</h3>
+          <p class="text-[color:var(--muted)]">Wiceprezes — doradztwo ESG i etyka AI.</p>
+        </article>
+
+        <!-- Adam Derbich -->
+        <article class="card p-6 text-center">
+          <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder — Adam Derbich" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Adam Derbich</h3>
+          <p class="text-[color:var(--muted)]">Administrator Systemów i Bezpieczeństwa.</p>
+        </article>
+
+        <!-- Olga Szudzik -->
+        <article class="card p-6 text-center">
+          <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder — Olga Szudzik" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Olga Szudzik</h3>
+          <p class="text-[color:var(--muted)]">Project Manager (Feniks) • Koordynator komunikacji (p.o.).</p>
+        </article>
+
+        <!-- Małgorzata Adamczak -->
+        <article class="card p-6 text-center">
+          <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder — Małgorzata Adamczak" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Małgorzata Adamczak</h3>
+          <p class="text-[color:var(--muted)]">Project Manager (WEKTOR).</p>
+        </article>
+
+        <!-- Marta Firlej -->
+        <article class="card p-6 text-center">
+          <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder — Marta Firlej" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Marta Firlej</h3>
+          <p class="text-[color:var(--muted)]">Główna księgowa.</p>
+        </article>
+
+        <!-- Krzysztof Lizak -->
+        <article class="card p-6 text-center">
+          <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder — Krzysztof Lizak" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Krzysztof Lizak</h3>
+          <p class="text-[color:var(--muted)]">Administrator biura, IODO.</p>
+        </article>
+
+        <!-- Dodaj kolejne osoby tutaj -->
       </div>
-      <div class="team-member">
-        <img src="img/monika.jpg" alt="Monika Zawadzka">
-        <h3>Monika Zawadzka</h3>
-        <p>Doradca ds. Etyki AI i ESG, Wiceprezes Zarządu</p>
+    </section>
+
+    <!-- DORADCY / RADA PROGRAMOWA -->
+    <section class="max-w-6xl mx-auto px-4 py-8">
+      <h2 class="text-2xl font-bold mb-6">Rada Programowa & Doradcy</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <article class="card p-5 text-center">
+          <img src="assets/img/adam-przadka.jpg" alt="dr Adam Prządka — Rada Programowa" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">dr Adam Prządka</h3>
+          <p class="text-[color:var(--muted)] text-sm">Ekspert data science.</p>
+        </article>
+
+        <article class="card p-5 text-center">
+          <img src="assets/img/karolina-janczukowicz.jpg" alt="dr Karolina Janczukowicz — Rada Programowa" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">dr Karolina Janczukowicz</h3>
+          <p class="text-[color:var(--muted)] text-sm">Adiunkt — edukacja i psycholingwistyka.</p>
+        </article>
+
+        <article class="card p-5 text-center">
+          <img src="assets/img/zuzanna-wiorogorska.jpg" alt="dr Zuzanna Wiorogórska — Rada Programowa" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">dr Zuzanna Wiorogórska</h3>
+          <p class="text-[color:var(--muted)] text-sm">Ekspertka informacji naukowej.</p>
+        </article>
       </div>
-      <div class="team-member">
-        <img src="img/placeholder.jpg" alt="Placeholder — Adam">
-        <h3>Adam Derbich</h3>
-        <p>Administrator Systemów i Bezpieczeństwa</p>
+    </section>
+
+    <!-- RADA NADZORCZA -->
+    <section class="max-w-6xl mx-auto px-4 py-8">
+      <h2 class="text-2xl font-bold mb-6">Rada Nadzorcza</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <article class="card p-5 text-center">
+          <img src="assets/img/miroslaw-lukaszewicz.jpg" alt="dr Mirosław Łukasiewicz — Rada Nadzorcza" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">dr Mirosław Łukasiewicz</h3>
+          <p class="text-[color:var(--muted)] text-sm">Ekspert w transferze technologii.</p>
+        </article>
+
+        <article class="card p-5 text-center">
+          <img src="assets/img/joanna-kosowicz.jpg" alt="Joanna Kosowicz — Rada Nadzorcza" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">Joanna Kosowicz</h3>
+          <p class="text-[color:var(--muted)] text-sm">Architekt — specjalistka BIM.</p>
+        </article>
+
+        <article class="card p-5 text-center">
+          <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder — Aleksandra Natalia Mogadorska" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">Aleksandra Natalia Mogadorska</h3>
+          <p class="text-[color:var(--muted)] text-sm">Członek Rady Nadzorczej — profil uzupełniamy.</p>
+        </article>
       </div>
-      <div class="team-member">
-        <img src="img/placeholder.jpg" alt="Placeholder — Olga">
-        <h3>Olga Szudzik</h3>
-        <p>Project Manager (Feniks), Koordynator Komunikacji (p.o.)</p>
+    </section>
+
+    <!-- AGENTS / BALTIC BRAIN -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold mb-6">Baltic Brain — role cyfrowe (agenci AI)</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Full agent list -->
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Marcin</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Wiedzy Strategicznej — analizy i streszczenia dla zarządu.</p>
+        </div>
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Maria</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Analizy Rynku — monitorowanie szans i zagrożeń.</p>
+        </div>
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Patryk</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Koordynacji Projektów (PMO).</p>
+        </div>
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Ryszard</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Analityki Ryzyka — predykcje ryzyka.</p>
+        </div>
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Agnieszka</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Sprawozdawczy — automatyczne raporty.</p>
+        </div>
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Ola</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Kreatywny (copywriting).</p>
+        </div>
+
+        <!-- add remaining agents as needed -->
       </div>
-      <div class="team-member">
-        <img src="img/placeholder.jpg" alt="Placeholder — Małgorzata">
-        <h3>Małgorzata Adamczak</h3>
-        <p>Project Manager (WEKTOR)</p>
-      </div>
-      <div class="team-member">
-        <img src="img/placeholder.jpg" alt="Placeholder — Marta">
-        <h3>Marta Firlej</h3>
-        <p>Główna Księgowa</p>
-      </div>
-      <div class="team-member">
-        <img src="img/placeholder.jpg" alt="Placeholder — Krzysztof L.">
-        <h3>Krzysztof Lizak</h3>
-        <p>Administrator Biura i Wydarzeń, IODO</p>
-      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-[color:var(--dark-steel)] text-[color:var(--muted)] py-8 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <div>© 2025 Baltic Digital Institute</div>
     </div>
-  </section>
-
-  <!-- Doradcy i Rady -->
-  <section class="content">
-    <h2>Doradcy i Rady</h2>
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="img/placeholder.jpg" alt="Placeholder — Doradca">
-        <h3>Rada Programowa</h3>
-        <p>Eksperci wspierający rozwój instytutu.</p>
-      </div>
-      <div class="team-member">
-        <img src="img/placeholder.jpg" alt="Placeholder — Rada Nadzorcza">
-        <h3>Rada Nadzorcza</h3>
-        <p>Nadzór i wsparcie strategiczne.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Agenci AI -->
-  <section class="content">
-    <h2>Agenci Baltic Brain (AI)</h2>
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="img/placeholder.jpg" alt="Placeholder — Marcin">
-        <h3>Marcin</h3>
-        <p>Agent Wiedzy Strategicznej</p>
-      </div>
-      <div class="team-member">
-        <img src="img/placeholder.jpg" alt="Placeholder — Maria">
-        <h3>Maria</h3>
-        <p>Agent Analizy Rynku</p>
-      </div>
-      <div class="team-member">
-        <img src="img/placeholder.jpg" alt="Placeholder — Patryk">
-        <h3>Patryk</h3>
-        <p>Agent Koordynacji Projektów</p>
-      </div>
-      <!-- ...dodaj pozostałych agentów: Ryszard, Agnieszka, Ola, Karol, itd. -->
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Baltic Digital Institute</p>
   </footer>
+
 </body>
 </html>
