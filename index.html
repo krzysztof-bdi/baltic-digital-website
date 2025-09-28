@@ -4,155 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baltic Digital Institute</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="assets/svg/Logo main.svg">
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-white text-gray-900">
 
   <!-- Navbar -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto flex items-center justify-between py-4 px-6">
-      <a href="index.html" class="flex items-center space-x-2">
+  <header class="fixed w-full bg-white shadow z-50">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <a href="index.html">
         <img src="assets/svg/Logo main.svg" alt="Baltic Digital Institute" class="h-10">
       </a>
-      <nav class="space-x-6">
-        <a href="#onas" class="hover:text-blue-600">O nas</a>
-        <a href="#rozwiazania" class="hover:text-blue-600">Rozwiązania</a>
-        <a href="#zaufanie" class="hover:text-blue-600">Zaufanie</a>
-        <a href="kontakt.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Kontakt</a>
-      </nav>
-    </div>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="index.html" class="hover:text-cyan-600">Strona główna</a></li>
+        <li><a href="o-nas.html" class="hover:text-cyan-600">O nas</a></li>
+        <li><a href="rozwiazania.html" class="hover:text-cyan-600">Rozwiązania</a></li>
+        <li><a href="kontakt.html" class="hover:text-cyan-600">Kontakt</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Hero -->
-  <section class="relative bg-gray-800 text-white">
-    <img src="assets/img/Architekci cyfrowej odporności.png" alt="Hero background" class="absolute inset-0 w-full h-full object-cover opacity-50">
-    <div class="relative container mx-auto text-center py-32">
+  <section class="relative bg-gray-900 text-white min-h-screen flex items-center">
+    <img src="assets/img/Architekci cyfrowej odporności.png" alt="Hero" class="absolute inset-0 w-full h-full object-cover opacity-40">
+    <div class="relative max-w-4xl mx-auto text-center px-6">
       <h1 class="text-4xl md:text-6xl font-bold mb-6">Baltic Digital Institute</h1>
-      <p class="text-xl md:text-2xl">Architekci cyfrowej odporności regionu Morza Bałtyckiego</p>
+      <p class="text-xl md:text-2xl mb-8">Architekci cyfrowej odporności w regionie Morza Bałtyckiego</p>
+      <a href="o-nas.html" class="px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg shadow">Poznaj nas</a>
     </div>
   </section>
 
-  <!-- O nas -->
-  <section id="onas" class="container mx-auto py-16 px-6">
-    <h2 class="text-3xl font-bold mb-8 text-center">O nas</h2>
-    <p class="text-lg mb-12 text-center max-w-3xl mx-auto">
-      Baltic Digital Institute (dawniej Fundacja Instytut Nowoczesnej Edukacji) to organizacja z siedzibą w Gdańsku, która od 2021 roku rozwija kompetencje w obszarze transformacji cyfrowej, AI i cyberbezpieczeństwa. 
-      Realizujemy projekty edukacyjne, wspieramy sektor publiczny i prywatny oraz budujemy odporność cyfrową w regionie Morza Bałtyckiego.
-    </p>
-
-    <!-- Zarząd -->
-    <div class="mb-12">
-      <h3 class="text-2xl font-semibold mb-6">Zarząd</h3>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white shadow rounded-lg p-6 text-center">
-          <img src="assets/img/krzysztof-rek.jpg" alt="Krzysztof Rek" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
-          <h4 class="text-xl font-bold">Krzysztof Rek</h4>
-          <p class="text-blue-600 font-medium">Prezes Zarządu</p>
-          <p class="mt-2 text-sm">Lider transformacji cyfrowej z doświadczeniem w IT, finansach i strategii. Obecnie Dyrektor ds. Digitalizacji w Energa S.A.</p>
-        </div>
-        <div class="bg-white shadow rounded-lg p-6 text-center">
-          <img src="assets/img/monika-zawadzka.jpg" alt="Monika Zawadzka" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
-          <h4 class="text-xl font-bold">Monika Zawadzka</h4>
-          <p class="text-blue-600 font-medium">Wiceprezes Zarządu</p>
-          <p class="mt-2 text-sm">Ekspertka w zakresie ESG i transformacji energetycznej, z doświadczeniem w sektorze bankowym i publicznym.</p>
-        </div>
+  <!-- Filar cards -->
+  <section class="py-20 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Nasze filary</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 border rounded-xl shadow hover:shadow-lg bg-white">
+        <div class="text-cyan-600 text-4xl mb-4">🤖</div>
+        <h3 class="text-xl font-semibold mb-2">Sztuczna Inteligencja</h3>
+        <p class="text-gray-600">Wdrażamy AI w edukacji, administracji i biznesie, zwiększając efektywność i innowacyjność.</p>
       </div>
-    </div>
-
-    <!-- Rada Programowa -->
-    <div class="mb-12">
-      <h3 class="text-2xl font-semibold mb-6">Rada Programowa</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white shadow rounded-lg p-6 text-center">
-          <img src="assets/img/adam-przadka.jpg" alt="Adam Prządka" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-          <h4 class="font-bold">dr Adam Prządka</h4>
-          <p class="text-sm">Ekspert w obszarze Data Science i transformacji cyfrowej (Schneider Electric).</p>
-        </div>
-        <div class="bg-white shadow rounded-lg p-6 text-center">
-          <img src="assets/img/karolina-janczukowicz.jpg" alt="Karolina Janczukowicz" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-          <h4 class="font-bold">dr Karolina Janczukowicz</h4>
-          <p class="text-sm">Adiunkt Uniwersytetu Gdańskiego, ekspertka psycholingwistyki i edukacji.</p>
-        </div>
-        <div class="bg-white shadow rounded-lg p-6 text-center">
-          <img src="assets/img/zuzanna-wiorogorska.jpg" alt="Zuzanna Wiorogórska" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-          <h4 class="font-bold">dr Zuzanna Wiorogórska</h4>
-          <p class="text-sm">Ekspertka w zakresie otwartej nauki i edukacji informacyjnej (Uniwersytet Warszawski).</p>
-        </div>
-        <div class="bg-white shadow rounded-lg p-6 text-center">
-          <img src="assets/img/jose-placeholder.jpg" alt="Jose Antonio Gamez Martinez" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-          <h4 class="font-bold">dr Jose Antonio Gamez Martinez</h4>
-          <p class="text-sm">Doktor chemii, działacz społeczny w projektach wielokulturowych.</p>
-        </div>
-        <div class="bg-white shadow rounded-lg p-6 text-center">
-          <img src="assets/img/danuta-rek.jpg" alt="Danuta Rek" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-          <h4 class="font-bold">mgr Danuta Rek</h4>
-          <p class="text-sm">Samorządowiec, regionalistka, przewodnicząca Komisji Nauki Sejmiku Woj. Pomorskiego.</p>
-        </div>
+      <div class="p-6 border rounded-xl shadow hover:shadow-lg bg-white">
+        <div class="text-cyan-600 text-4xl mb-4">🔒</div>
+        <h3 class="text-xl font-semibold mb-2">Cyberbezpieczeństwo</h3>
+        <p class="text-gray-600">Chronimy dane i systemy, budując bezpieczną przestrzeń cyfrową w regionie Morza Bałtyckiego.</p>
       </div>
-    </div>
-
-    <!-- Rada Nadzorcza -->
-    <div>
-      <h3 class="text-2xl font-semibold mb-6">Rada Nadzorcza</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white shadow rounded-lg p-6 text-center">
-          <img src="assets/img/miroslaw-lukaszewicz.jpg" alt="Mirosław Łukasiewicz" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-          <h4 class="font-bold">dr Mirosław Łukasiewicz</h4>
-          <p class="text-sm">Ekspert ds. transferu technologii, doradca w JP Weber, wykładowca SGH.</p>
-        </div>
-        <div class="bg-white shadow rounded-lg p-6 text-center">
-          <img src="assets/img/joanna-kosowicz.jpg" alt="Joanna Kosowicz" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-          <h4 class="font-bold">Joanna Kosowicz</h4>
-          <p class="text-sm">Architektka specjalizująca się w modelowaniu BIM (Holandia).</p>
-        </div>
-        <div class="bg-white shadow rounded-lg p-6 text-center">
-          <img src="assets/img/aleksandra-placeholder.jpg" alt="Aleksandra Mogadorska" class="w-24 h-24 object-cover rounded-full mx-auto mb-4">
-          <h4 class="font-bold">Aleksandra Natalia Mogadorska</h4>
-          <p class="text-sm">Członkini Rady Nadzorczej od początku istnienia organizacji.</p>
-        </div>
+      <div class="p-6 border rounded-xl shadow hover:shadow-lg bg-white">
+        <div class="text-cyan-600 text-4xl mb-4">🌍</div>
+        <h3 class="text-xl font-semibold mb-2">Cyfrowa odporność</h3>
+        <p class="text-gray-600">Tworzymy strategie cyfrowe wzmacniające odporność organizacji i społeczeństw.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Rozwiązania -->
-  <section id="rozwiazania" class="bg-gray-100 py-16 px-6">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-8 text-center">Rozwiązania</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white shadow rounded-lg p-8 text-center">
-          <div class="text-5xl mb-4">🤖</div>
-          <h3 class="text-xl font-bold mb-2">Sztuczna Inteligencja</h3>
-          <p class="text-sm">Sekcja w budowie. Wkrótce opiszemy nasze działania w zakresie AI.</p>
-        </div>
-        <div class="bg-white shadow rounded-lg p-8 text-center">
-          <div class="text-5xl mb-4">🛡️</div>
-          <h3 class="text-xl font-bold mb-2">Cyberbezpieczeństwo</h3>
-          <p class="text-sm">Sekcja w budowie. Wkrótce opiszemy nasze działania w zakresie cyber.</p>
-        </div>
-        <div class="bg-white shadow rounded-lg p-8 text-center">
-          <div class="text-5xl mb-4">🌍</div>
-          <h3 class="text-xl font-bold mb-2">Cyfrowa Odporność</h3>
-          <p class="text-sm">Sekcja w budowie. Wkrótce opiszemy nasze działania w zakresie digital resilience.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Zaufanie -->
-  <section id="zaufanie" class="container mx-auto py-16 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-8">Zaufali nam</h2>
-    <p class="mb-8">Tutaj umieścimy logotypy partnerów, grantodawców i mediów.</p>
-    <div class="flex justify-center space-x-6">
-      <div class="w-32 h-16 bg-gray-200 flex items-center justify-center">Logo</div>
-      <div class="w-32 h-16 bg-gray-200 flex items-center justify-center">Logo</div>
-      <div class="w-32 h-16 bg-gray-200 flex items-center justify-center">Logo</div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6 text-center">
-    <p>&copy; 2025 Baltic Digital Institute. Wszelkie prawa zastrzeżone.</p>
+  <footer class="bg-gray-100 py-8 text-center text-sm text-gray-600">
+    © 2025 Baltic Digital Institute. Wszystkie prawa zastrzeżone.
   </footer>
-
 </body>
 </html>
