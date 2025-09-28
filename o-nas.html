@@ -3,80 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>O Nas - Baltic Digital Institute</title>
-  <link href="dist/output.css" rel="stylesheet">
+  <title>O nas - Baltic Digital Institute</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Lato', sans-serif; } </style>
 </head>
-<body class="antialiased bg-baltic-navy text-white font-sans">
-
-  <!-- HEADER -->
-  <header class="bg-dark-steel shadow-md fixed w-full z-20">
-    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
-      <a href="index.html" class="flex items-center font-heading text-white text-2xl font-bold">BDi</a>
-      <nav class="hidden md:flex space-x-8 items-center">
-        <a href="rozwiazania.html" class="hover:text-cyber-turq transition">Rozwiązania</a>
-        <a href="o-nas.html" class="text-cyber-turq">O Nas</a>
-        <a href="kontakt.html" class="hover:text-cyber-turq transition">Kontakt</a>
-      </nav>
-      <!-- Hamburger -->
-      <div class="md:hidden">
-        <button id="menu-button" class="relative w-8 h-8 flex flex-col justify-between items-center group">
-          <span class="block h-1 w-full bg-white rounded transition"></span>
-          <span class="block h-1 w-full bg-white rounded transition"></span>
-          <span class="block h-1 w-full bg-white rounded transition"></span>
-        </button>
-      </div>
-    </div>
-    <!-- MOBILE MENU -->
-    <div id="mobile-menu" class="overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out md:hidden bg-dark-steel">
-      <a href="rozwiazania.html" class="block px-6 py-3 text-white hover:bg-baltic-navy">Rozwiązania</a>
-      <a href="o-nas.html" class="block px-6 py-3 text-cyber-turq font-bold">O Nas</a>
-      <a href="kontakt.html" class="block px-6 py-3 text-white hover:bg-baltic-navy">Kontakt</a>
-    </div>
+<body class="bg-[#0A192F] text-white">
+  <!-- Header -->
+  <header class="bg-[#0A192F] fixed w-full z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="text-xl font-bold text-[#00F6D2]">BDI</a>
+      <button id="menu-btn" class="block md:hidden text-white focus:outline-none">☰</button>
+      <ul id="menu" class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-[#00F6D2]">Start</a></li>
+        <li><a href="o-nas.html" class="hover:text-[#00F6D2]">O nas</a></li>
+        <li><a href="rozwiazania.html" class="hover:text-[#00F6D2]">Rozwiązania</a></li>
+        <li><a href="kontakt.html" class="hover:text-[#00F6D2]">Kontakt</a></li>
+      </ul>
+    </nav>
+    <ul id="mobile-menu" class="md:hidden hidden flex-col bg-[#1F2937]">
+      <li><a href="index.html" class="block px-4 py-2">Start</a></li>
+      <li><a href="o-nas.html" class="block px-4 py-2">O nas</a></li>
+      <li><a href="rozwiazania.html" class="block px-4 py-2">Rozwiązania</a></li>
+      <li><a href="kontakt.html" class="block px-4 py-2">Kontakt</a></li>
+    </ul>
   </header>
 
-  <!-- MAIN -->
-  <main class="pt-24 container mx-auto px-6">
-    <section class="text-center max-w-4xl mx-auto mb-20">
-      <h1 class="font-heading text-4xl md:text-5xl font-black">Kim jesteśmy?</h1>
-      <p class="mt-6 text-lg text-steel-gray">Baltic Digital Institute to zespół ekspertów, którzy łączą sztuczną inteligencję i cyberbezpieczeństwo, by wspierać transformację cyfrową Europy.</p>
-    </section>
-
-    <section class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
-      <div class="bg-dark-steel p-6 rounded-lg">
-        <h2 class="font-heading text-2xl font-bold mb-4">Nasza Misja</h2>
-        <p class="text-steel-gray">Wzmacniamy odporność cyfrową organizacji i tworzymy rozwiązania oparte na AI, które służą społeczeństwu i gospodarce.</p>
-      </div>
-      <div class="bg-dark-steel p-6 rounded-lg">
-        <h2 class="font-heading text-2xl font-bold mb-4">Nasza Wizja</h2>
-        <p class="text-steel-gray">Być wiodącym hubem innowacji cyfrowych w regionie Morza Bałtyckiego.</p>
-      </div>
-      <div class="bg-dark-steel p-6 rounded-lg">
-        <h2 class="font-heading text-2xl font-bold mb-4">Nasze Wartości</h2>
-        <p class="text-steel-gray">Transparentność, bezpieczeństwo, odpowiedzialność technologiczna.</p>
-      </div>
-    </section>
+  <!-- Content -->
+  <main class="pt-24 container mx-auto px-4">
+    <h1 class="text-3xl font-bold mb-6">O nas</h1>
+    <p class="text-gray-300 mb-4">Baltic Digital Institute to centrum innowacji w obszarze sztucznej inteligencji i cyberbezpieczeństwa.</p>
+    <p class="text-gray-300 mb-4">Naszą misją jest tworzenie rozwiązań, które realnie wzmacniają bezpieczeństwo cyfrowe i rozwój biznesu.</p>
+    <p class="text-gray-300">Wartości: profesjonalizm, przejrzystość, innowacyjność.</p>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-dark-steel mt-20">
-    <div class="max-w-7xl mx-auto px-6 py-12 text-center text-steel-gray text-sm">
-      <p>&copy; 2025 Baltic Digital Institute. Wszelkie prawa zastrzeżone.</p>
-    </div>
+  <!-- Footer -->
+  <footer class="bg-[#1F2937] text-center py-4 mt-10">
+    <p class="text-gray-400 text-sm">© 2025 Baltic Digital Institute</p>
   </footer>
 
   <script>
-    const menuButton = document.getElementById("menu-button");
+    const menuBtn = document.getElementById("menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
-    menuButton.addEventListener("click", () => {
-      mobileMenu.classList.toggle("max-h-96");
-      mobileMenu.classList.toggle("opacity-100");
-      menuButton.classList.toggle("open");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
     });
   </script>
-  <style>
-    #menu-button.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-    #menu-button.open span:nth-child(2) { opacity: 0; }
-    #menu-button.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-  </style>
 </body>
 </html>
