@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>O Nas - Baltic Digital Institute</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-baltic-navy text-gray-100">
-
-  <!-- Navbar -->
-  <nav class="navbar flex justify-between items-center">
-    <a href="index.html" class="text-xl font-bold text-cyber-turq">BDI</a>
-    <div class="hidden md:flex space-x-6">
-      <a href="rozwiazania.html">Rozwiązania</a>
-      <a href="o-nas.html" class="text-cyber-turq">O nas</a>
-      <a href="inicjatywy.html">Inicjatywy</a>
-      <a href="baza-wiedzy.html">Baza wiedzy</a>
-      <a href="kontakt.html">Kontakt</a>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <h1>O Nas</h1>
-    <p>Poznaj filozofię, wartości i zespół Baltic Digital Institute</p>
-  </section>
-
-  <!-- Nasza Filozofia i Wartości -->
-  <section class="py-16 px-6 max-w-6xl mx-auto space-y-12">
-    <div>
-      <h2 class="text-3xl font-bold text-cyber-turq mb-4">Technologia z Sumieniem</h2>
-      <p class="mb-6">
-        W Baltic Digital Institute wierzymy, że technologia nie jest celem samym w sobie, lecz narzędziem do budowania lepszej,
-        bezpieczniejszej i bardziej sprawiedliwej przyszłości. Nasze działania opierają się na czterech fundamentalnych wartościach.
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="p-6 bg-dark-steel rounded-lg shadow">
-          <h3 class="text-xl font-semibold text-cyber-turq">Innowacja</h3>
-          <p>Przesuwamy granice, tworząc rozwiązania na najwyższym światowym poziomie.</p>
-        </div>
-        <div class="p-6 bg-dark-steel rounded-lg shadow">
-          <h3 class="text-xl font-semibold text-cyber-turq">Odpowiedzialność</h3>
-          <p>Działamy transparentnie, z poszanowaniem wartości ludzkich i społecznych.</p>
-        </div>
-        <div class="p-6 bg-dark-steel rounded-lg shadow">
-          <h3 class="text-xl font-semibold text-cyber-turq">Współpraca</h3>
-          <p>Budujemy silne partnerstwa międzysektorowe, działając na rzecz całego ekosystemu.</p>
-        </div>
-        <div class="p-6 bg-dark-steel rounded-lg shadow">
-          <h3 class="text-xl font-semibold text-cyber-turq">Wpływ Społeczny</h3>
-          <p>Wykorzystujemy technologię do rozwiązywania realnych problemów i budowania odporności.</p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Nas | Baltic Digital Institute</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="/" class="logo">BDI</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="/">Strona Główna</a></li>
+            <li><a href="/rozwiazania.html">Rozwiązania</a></li>
+            <li><a href="/inicjatywy.html">Inicjatywy</a></li>
+            <li><a href="/baza-wiedzy.html">Baza Wiedzy</a></li>
+            <li><a href="/o-nas.html" class="active">O Nas</a></li>
+            <li><a href="/kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- CTA -->
-  <section class="text-center py-16 bg-dark-steel">
-    <h2 class="text-2xl font-bold text-cyber-turq mb-4">Poznaj nasz zespół</h2>
-    <a href="o-nas-zespol.html" class="btn">Zobacz Zespół</a>
-  </section>
+    <main>
+      <section class="hero dark-bg">
+        <div class="container">
+          <h1>O Nas</h1>
+          <p>
+            Baltic Digital Institute to organizacja działająca na styku
+            <strong>sztucznej inteligencji</strong>,
+            <strong>cyberbezpieczeństwa</strong> i
+            <strong>transformacji cyfrowej</strong>. Naszą misją jest
+            budowanie cyfrowej odporności i przewagi konkurencyjnej dla
+            partnerów biznesowych i instytucjonalnych.
+          </p>
+        </div>
+      </section>
 
-  <!-- Footer -->
-  <footer>
-    © 2025 Baltic Digital Institute. Wszystkie prawa zastrzeżone.
-  </footer>
+      <section class="about-intro">
+        <div class="container">
+          <h2>Technologia z Sumieniem</h2>
+          <p>
+            Wierzymy, że technologia nie jest celem samym w sobie, lecz
+            narzędziem do budowania lepszej, bezpieczniejszej i bardziej
+            sprawiedliwej przyszłości. Nasze działania opierają się na
+            innowacji, odpowiedzialności, współpracy i realnym wpływie
+            społecznym.
+          </p>
+        </div>
+      </section>
 
-</body>
+      <section class="about-model">
+        <div class="container">
+          <h2>Model Hybrydowy: Ludzie + Agenci AI</h2>
+          <p>
+            Baltic Digital Institute działa w unikalnym modelu hybrydowym,
+            łącząc <strong>ekspertyzę ludzi</strong> z możliwościami
+            <strong>agentów AI</strong> w ramach
+            <em>Systemu Operacyjnego Baltic</em>. Nasz zespół ludzki obejmuje
+            liderów strategicznych, ekspertów technicznych, managerów projektów
+            i specjalistów wspierających. Równolegle, sieć agentów AI –
+            <em>Baltic Brain</em> – realizuje zadania analityczne,
+            operacyjne i komunikacyjne, co pozwala nam osiągać
+            <strong>ekstremalną efektywność</strong>.
+          </p>
+          <p>
+            Dzięki temu jesteśmy w stanie dostarczać naszym partnerom
+            <strong>szybsze rezultaty</strong>, przy jednoczesnym zachowaniu
+            najwyższych standardów jakości i bezpieczeństwa.
+          </p>
+          <div class="cta-link">
+            <a href="/o-nas-zespol.html" class="button"
+              >Poznaj nasz zespół hybrydowy</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Baltic Digital Institute. Wszystkie prawa zastrzeżone.</p>
+      </div>
+    </footer>
+  </body>
 </html>
