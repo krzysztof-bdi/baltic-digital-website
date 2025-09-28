@@ -1,172 +1,59 @@
 <!DOCTYPE html>
-<html lang="pl" class="scroll-smooth">
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baltic Digital Institute - Architekci Cyfrowej Odporności</title>
-    <meta name="description" content="Przesuwamy granice efektywnego wykorzystania AI i cyberbezpieczeństwa w regionie Morza Bałtyckiego poprzez nowatorskie badania, innowacje, wdrożenia i edukację.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'baltic-navy': '#0A192F',
-                        'dark-steel': '#112240',
-                        'cyber-turq': '#64FFDA',
-                        'steel-gray': '#8892B0',
-                        'white': '#FFFFFF',
-                    },
-                    fontFamily: {
-                        sans: 'Lato', 'sans-serif',
-                        heading:'Geist Sans', 'sans-serif';
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prosty projekt w TailwindCSS z responsywnym menu" />
+  <title>Poprawiony Projekt Tailwind</title>
+  <link href="dist/output.css" rel="stylesheet">
 </head>
-<body class="antialiased bg-baltic-navy text-white font-sans">
-
-    <header class="container mx-auto px-6 py-6 flex justify-between items-center">
-        <div>
-            <a href="index.html" aria-label="Strona główna Baltic Digital Institute">
-                <svg width="95" height="36" viewBox="0 0 95 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <text x="0" y="30" font-family="Geist Sans, sans-serif" font-weight="900" font-size="34" fill="#FFFFFF">BD</text>
-                    <text x="73" y="30" font-family="Geist Sans, sans-serif" font-weight="900" font-size="34" fill="#FFFFFF">i</text>
-                    <rect y="16" width="86" height="3" fill="#64FFDA"/>
-                    <rect x="78" y="5" width="8" height="8" fill="#64FFDA"/>
-                </svg>
-            </a>
+<body class="font-poppins bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0">
+          <a href="#" class="text-xl font-bold text-indigo-600">MojaStrona</a>
         </div>
-        <nav class="hidden md:flex space-x-8 items-center">
-            <a href="rozwiazania.html" class="hover:text-cyber-turq transition-colors">Rozwiązania</a>
-            <a href="o-nas.html" class="hover:text-cyber-turq transition-colors">O Nas</a>
-            <a href="kontakt.html" class="hover:text-cyber-turq transition-colors">Kontakt</a>
-            <a href="kontakt.html" class="border border-cyber-turq text-cyber-turq px-4 py-2 rounded hover:bg-cyber-turq hover:text-baltic-navy transition-colors font-bold">
-                Skonsultuj Projekt
-            </a>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-indigo-500">Home</a>
+          <a href="#" class="hover:text-indigo-500">O mnie</a>
+          <a href="#" class="hover:text-indigo-500">Portfolio</a>
+          <a href="#" class="hover:text-indigo-500">Kontakt</a>
         </nav>
         <div class="md:hidden">
-            <button class="text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
+          <button id="menu-button" class="text-gray-700 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
         </div>
-    </header>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">O mnie</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Portfolio</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kontakt</a>
+    </div>
+  </header>
 
-    <main class="container mx-auto px-6 pt-24 pb-16 md:pt-32 md:pb-24 text-center">
-        <h1 class="font-heading text-4xl md:text-6xl font-black leading-tight">
-            Architekci Cyfrowej Odporności
-        </h1>
-        <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-steel-gray">
-            Przesuwamy granice efektywnego wykorzystania AI i cyberbezpieczeństwa w regionie Morza Bałtyckiego poprzez nowatorskie badania, innowacje, wdrożenia i edukację.
-        </p>
-        <div class="mt-10">
-            <a href="rozwiazania.html" class="bg-cyber-turq text-baltic-navy font-bold py-4 px-8 rounded text-lg hover:opacity-90 transition-opacity">
-                Poznaj Nasze Rozwiązania
-            </a>
-        </div>
-    </main>
-
-    <section id="rozwiazania" class="py-20 px-6">
-        <div class="container mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold">Nasze Strumienie Wartości</h2>
-                <p class="mt-4 max-w-2xl mx-auto text-steel-gray">Dostarczamy kompleksowe rozwiązania w trzech kluczowych obszarach.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-dark-steel p-8 rounded-lg border border-gray-800 hover:border-cyber-turq transition-colors">
-                    <svg class="w-10 h-10 mb-6 text-cyber-turq" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 16v-2m0-8v-2m0 16V4m6 6l2-2m-2 12l2-2M6 18l-2-2m2-12L4 6m16 6h2M2 12H4m8 8a8 8 0 110-16 8 8 0 010 16z"></path></svg>
-                    <h3 class="font-heading text-2xl font-bold mb-4">Wdrożenia Systemów AI</h3>
-                    <p class="text-steel-gray mb-6">Projektujemy i wdrażamy zautomatyzowane systemy operacyjne oparte na agentach AI, które generują mierzalny wzrost i przewagę konkurencyjną.</p>
-                    <a href="rozwiazania.html" class="font-bold text-cyber-turq hover:underline">Odkryj R-OaaS &rarr;</a>
-                </div>
-                <div class="bg-dark-steel p-8 rounded-lg border border-gray-800 hover:border-cyber-turq transition-colors">
-                    <svg class="w-10 h-10 mb-6 text-cyber-turq" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    <h3 class="font-heading text-2xl font-bold mb-4">Badania i Certyfikacja</h3>
-                    <p class="text-steel-gray mb-6">Tworzymy standardy i weryfikujemy bezpieczeństwo technologii w naszym laboratorium, budując zaufanie do innowacji w regionie.</p>
-                    <a href="rozwiazania.html" class="font-bold text-cyber-turq hover:underline">Dowiedz się więcej &rarr;</a>
-                </div>
-                <div class="bg-dark-steel p-8 rounded-lg border border-gray-800 hover:border-cyber-turq transition-colors">
-                    <svg class="w-10 h-10 mb-6 text-cyber-turq" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222 4 2.222V20M1 12l5.373 2.986M17.627 14.986L23 12"></path></svg>
-                    <h3 class="font-heading text-2xl font-bold mb-4">Edukacja i Kompetencje</h3>
-                    <p class="text-steel-gray mb-6">Budujemy kompetencje przyszłości poprzez akredytowane szkolenia i programy grantowe, przygotowując kadry do pracy z AI.</p>
-                    <a href="rozwiazania.html" class="font-bold text-cyber-turq hover:underline">Zobacz ofertę szkoleń &rarr;</a>
-                </div>
-            </div>
-        </div>
+  <!-- Main Content -->
+  <main class="pt-20">
+    <section class="max-w-7xl mx-auto p-6">
+      <h1 class="text-3xl font-bold mb-4">Witaj na mojej stronie</h1>
+      <p class="text-lg text-gray-700">To jest prosty projekt stworzony z TailwindCSS z responsywnym menu.</p>
     </section>
+  </main>
 
-    <section class="py-20 px-6 bg-dark-steel">
-        <div class="container mx-auto text-center">
-            <h2 class="font-heading text-3xl md:text-4xl font-bold">Zaufany Partner w Transformacji Cyfrowej</h2>
-            <p class="mt-4 max-w-2xl mx-auto text-steel-gray">Nasza wiarygodność jest potwierdzona przez międzynarodowe standardy i strategiczne partnerstwa.</p>
-            <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="text-left">
-                    <h3 class="font-heading text-xl font-bold text-cyber-turq mb-2">Akredytowana Jednostka</h3>
-                    <p class="text-steel-gray">Posiadamy certyfikat zarządzania jakością ISO 9001:2015 i jesteśmy na ścieżce do uzyskania akredytacji Polskiego Centrum Akredytacji (PCA) dla naszego laboratorium i jednostki certyfikującej.</p>
-                </div>
-                <div class="text-left">
-                    <h3 class="font-heading text-xl font-bold text-cyber-turq mb-2">Partnerzy Strategiczni</h3>
-                    <p class="text-steel-gray">Jesteśmy aktywnym uczestnikiem kluczowych inicjatyw, w tym międzynarodowego projektu Baltic AI Gigafactory koordynowanego przez Ministerstwo Cyfryzacji.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-    <section id="o-nas" class="py-20 px-6">
-        <div class="container mx-auto max-w-4xl text-center">
-            <h2 class="font-heading text-3xl md:text-4xl font-bold">Technologia z Sumieniem</h2>
-            <p class="mt-6 text-lg md:text-xl text-steel-gray leading-relaxed">
-                Jesteśmy czymś więcej niż instytutem technologicznym. Naszą misją jest wykorzystywanie zaawansowanych technologii do rozwiązywania realnych problemów społecznych. Działamy w oparciu o głębokie, interdyscyplinarne przywództwo technologiczne i autentyczne zaangażowanie w budowanie regionalnej odporności cyfrowej.
-            </p>
-            <div class="mt-10">
-                <a href="o-nas.html" class="border border-cyber-turq text-cyber-turq font-bold py-3 px-8 rounded text-lg hover:bg-cyber-turq hover:text-baltic-navy transition-colors">
-                    Poznaj Naszą Historię
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="kontakt" class="py-20 px-6 bg-dark-steel">
-        <div class="container mx-auto max-w-4xl text-center">
-            <h2 class="font-heading text-3xl md:text-4xl font-bold">Gotowy na Transformację?</h2>
-            <p class="mt-4 text-lg text-steel-gray">Skontaktuj się z nami, aby omówić, jak możemy wesprzeć Twoją organizację w podróży ku cyfrowej przyszłości.</p>
-            <div class="mt-10">
-                <a href="kontakt.html" class="bg-cyber-turq text-baltic-navy font-bold py-4 px-8 rounded text-lg hover:opacity-90 transition-opacity">
-                    Skontaktuj się z Nami
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-baltic-navy mt-20">
-        <div class="container mx-auto px-6 py-12">
-            <div class="md:flex md:justify-between items-center text-center md:text-left">
-                <div class="mb-6 md:mb-0">
-                     <a href="index.html" aria-label="Strona główna Baltic Digital Institute">
-                        <svg width="95" height="36" viewBox="0 0 95 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <text x="0" y="30" font-family="Geist Sans, sans-serif" font-weight="900" font-size="34" fill="#FFFFFF">BD</text>
-                            <text x="73" y="30" font-family="Geist Sans, sans-serif" font-weight="900" font-size="34" fill="#FFFFFF">i</text>
-                            <rect y="16" width="86" height="3" fill="#64FFDA"/>
-                            <rect x="78" y="5" width="8" height="8" fill="#64FFDA"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="flex justify-center space-x-6 text-steel-gray">
-                    <a href="rozwiazania.html" class="hover:text-cyber-turq transition-colors">Rozwiązania</a>
-                    <a href="o-nas.html" class="hover:text-cyber-turq transition-colors">O Nas</a>
-                    <a href="kontakt.html" class="hover:text-cyber-turq transition-colors">Kontakt</a>
-                </div>
-            </div>
-            <div class="mt-8 border-t border-gray-800 pt-8 text-center text-sm text-steel-gray">
-                <p>&copy; 2025 Baltic Digital Institute. Wszelkie prawa zastrzeżone.</p>
-            </div>
-        </div>
-    </footer>
-
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
