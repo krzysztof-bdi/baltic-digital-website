@@ -3,41 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt – Baltic Digital Institute</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Kontakt - Baltic Digital Institute</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="assets/svg/Logo main.svg">
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-white text-gray-900">
 
   <!-- Navbar -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto flex items-center justify-between py-4 px-6">
-      <a href="index.html" class="flex items-center space-x-2">
+  <header class="fixed w-full bg-white shadow z-50">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <a href="index.html">
         <img src="assets/svg/Logo main.svg" alt="Baltic Digital Institute" class="h-10">
       </a>
-      <nav class="space-x-6">
-        <a href="index.html#onas" class="hover:text-blue-600">O nas</a>
-        <a href="index.html#rozwiazania" class="hover:text-blue-600">Rozwiązania</a>
-        <a href="index.html#zaufanie" class="hover:text-blue-600">Zaufanie</a>
-        <a href="kontakt.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Kontakt</a>
-      </nav>
-    </div>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="index.html" class="hover:text-cyan-600">Strona główna</a></li>
+        <li><a href="o-nas.html" class="hover:text-cyan-600">O nas</a></li>
+        <li><a href="rozwiazania.html" class="hover:text-cyan-600">Rozwiązania</a></li>
+        <li><a href="kontakt.html" class="hover:text-cyan-600">Kontakt</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Kontakt -->
-  <section class="container mx-auto py-16 px-6">
-    <h2 class="text-3xl font-bold mb-8 text-center">Skontaktuj się z nami</h2>
-    <div class="max-w-3xl mx-auto">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxBdozm1NwBgaxoBVKHq1TcmwgR9sHYaQH_vp3yaFeN_HUGg/viewform?embedded=true" 
-              width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
-        Ładowanie…
-      </iframe>
-    </div>
+  <section class="pt-32 pb-20 max-w-3xl mx-auto px-6 text-center">
+    <h1 class="text-4xl font-bold mb-8">Skontaktuj się z nami</h1>
+    <p class="text-lg text-gray-700 mb-8">Chcesz dowiedzieć się więcej o Baltic Digital Institute? Wypełnij formularz, a my się odezwiemy.</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxBdozm1NwBgaxoBVKHq1TcmwgR9sHYaQH_vp3yaFeN_HUGg/viewform?embedded=true"
+      width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg shadow">Ładowanie…</iframe>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6 text-center">
-    <p>&copy; 2025 Baltic Digital Institute. Wszelkie prawa zastrzeżone.</p>
+  <footer class="bg-gray-100 py-8 text-center text-sm text-gray-600">
+    © 2025 Baltic Digital Institute. Wszystkie prawa zastrzeżone.
   </footer>
-
 </body>
 </html>
