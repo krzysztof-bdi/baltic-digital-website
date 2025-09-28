@@ -1,88 +1,69 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>O Nas | Baltic Digital Institute</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <a href="/" class="logo">BDI</a>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="/">Strona Główna</a></li>
-            <li><a href="/rozwiazania.html">Rozwiązania</a></li>
-            <li><a href="/inicjatywy.html">Inicjatywy</a></li>
-            <li><a href="/baza-wiedzy.html">Baza Wiedzy</a></li>
-            <li><a href="/o-nas.html" class="active">O Nas</a></li>
-            <li><a href="/kontakt.html">Kontakt</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O nas – Baltic Digital Institute</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #0A192F; color: #F9FAFB; }
+    .accent { color: #64FFDA; }
+    .btn-accent { background-color: #64FFDA; color: #0A192F; }
+    .btn-accent:hover { background-color: #52e0c4; }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold accent">Baltic Digital Institute</a>
+      <div class="space-x-6">
+        <a href="rozwiazania-dla-biznesu.html" class="hover:underline">Rozwiązania</a>
+        <a href="o-nas.html" class="hover:underline">O nas</a>
+        <a href="inicjatywy.html" class="hover:underline">Inicjatywy</a>
+        <a href="baza-wiedzy.html" class="hover:underline">Baza wiedzy</a>
+        <a href="kontakt.html" class="hover:underline">Kontakt</a>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <main>
-      <section class="hero dark-bg">
-        <div class="container">
-          <h1>O Nas</h1>
-          <p>
-            Baltic Digital Institute to organizacja działająca na styku
-            <strong>sztucznej inteligencji</strong>,
-            <strong>cyberbezpieczeństwa</strong> i
-            <strong>transformacji cyfrowej</strong>. Naszą misją jest
-            budowanie cyfrowej odporności i przewagi konkurencyjnej dla
-            partnerów biznesowych i instytucjonalnych.
-          </p>
-        </div>
-      </section>
+  <!-- Hero -->
+  <header class="bg-gray-800 py-20 text-center">
+    <h1 class="text-4xl font-bold mb-4">O nas</h1>
+    <p class="text-lg text-gray-300">Poznaj naszą misję, zespół i sposób działania</p>
+  </header>
 
-      <section class="about-intro">
-        <div class="container">
-          <h2>Technologia z Sumieniem</h2>
-          <p>
-            Wierzymy, że technologia nie jest celem samym w sobie, lecz
-            narzędziem do budowania lepszej, bezpieczniejszej i bardziej
-            sprawiedliwej przyszłości. Nasze działania opierają się na
-            innowacji, odpowiedzialności, współpracy i realnym wpływie
-            społecznym.
-          </p>
-        </div>
-      </section>
+  <!-- Content -->
+  <main class="flex-grow container mx-auto py-16 px-6 space-y-8">
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 accent">Kim jesteśmy</h2>
+      <p class="text-gray-300">
+        Baltic Digital Institute to organizacja działająca na styku technologii, innowacji i odpowiedzialności społecznej. 
+        Naszym celem jest rozwój i wdrażanie rozwiązań, które wzmacniają odporność cyfrową biznesu, administracji i społeczeństwa.
+      </p>
+    </section>
 
-      <section class="about-model">
-        <div class="container">
-          <h2>Model Hybrydowy: Ludzie + Agenci AI</h2>
-          <p>
-            Baltic Digital Institute działa w unikalnym modelu hybrydowym,
-            łącząc <strong>ekspertyzę ludzi</strong> z możliwościami
-            <strong>agentów AI</strong> w ramach
-            <em>Systemu Operacyjnego Baltic</em>. Nasz zespół ludzki obejmuje
-            liderów strategicznych, ekspertów technicznych, managerów projektów
-            i specjalistów wspierających. Równolegle, sieć agentów AI –
-            <em>Baltic Brain</em> – realizuje zadania analityczne,
-            operacyjne i komunikacyjne, co pozwala nam osiągać
-            <strong>ekstremalną efektywność</strong>.
-          </p>
-          <p>
-            Dzięki temu jesteśmy w stanie dostarczać naszym partnerom
-            <strong>szybsze rezultaty</strong>, przy jednoczesnym zachowaniu
-            najwyższych standardów jakości i bezpieczeństwa.
-          </p>
-          <div class="cta-link">
-            <a href="/o-nas-zespol.html" class="button"
-              >Poznaj nasz zespół hybrydowy</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 accent">Model działania</h2>
+      <p class="text-gray-300">
+        Pracujemy w modelu <strong>hybrydowym</strong>, łącząc kompetencje ekspertów z różnych dziedzin z potencjałem 
+        <span class="accent">agentów sztucznej inteligencji Baltic Brain</span>. 
+        Dzięki temu ludzie i AI współdziałają, wzajemnie się uzupełniając – tworząc zespół, który jest jednocześnie 
+        elastyczny, skalowalny i nastawiony na efektywność.
+      </p>
+    </section>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2025 Baltic Digital Institute. Wszystkie prawa zastrzeżone.</p>
-      </div>
-    </footer>
-  </body>
+    <div class="text-center mt-10">
+      <a href="o-nas-zespol.html" class="btn-accent px-6 py-3 rounded-lg font-semibold">Poznaj nasz zespół</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-6 text-center text-gray-400 text-sm">
+    © 2025 Baltic Digital Institute. Wszelkie prawa zastrzeżone.
+  </footer>
+
+</body>
 </html>
