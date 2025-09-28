@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rozwiązania - Baltic Digital Institute</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rozwiązania — Baltic Digital Institute</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <style> body { font-family: 'Lato', sans-serif; } </style>
+  <style>body{font-family:'Lato',sans-serif}</style>
 </head>
-<body class="bg-[#0A192F] text-white">
-  <!-- Header -->
+<body class="bg-[#0A192F] text-white min-h-screen">
   <header class="bg-[#0A192F] fixed w-full z-50">
-    <nav class="container mx-auto flex justify-between items-center p-4">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
       <a href="index.html" class="text-xl font-bold text-[#00F6D2]">BDI</a>
-      <button id="menu-btn" class="block md:hidden text-white focus:outline-none">☰</button>
-      <ul id="menu" class="hidden md:flex space-x-6">
+      <ul class="hidden md:flex space-x-6">
         <li><a href="index.html" class="hover:text-[#00F6D2]">Start</a></li>
         <li><a href="o-nas.html" class="hover:text-[#00F6D2]">O nas</a></li>
         <li><a href="rozwiazania.html" class="hover:text-[#00F6D2]">Rozwiązania</a></li>
         <li><a href="kontakt.html" class="hover:text-[#00F6D2]">Kontakt</a></li>
       </ul>
+      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
     </nav>
-    <ul id="mobile-menu" class="md:hidden hidden flex-col bg-[#1F2937]">
-      <li><a href="index.html" class="block px-4 py-2">Start</a></li>
-      <li><a href="o-nas.html" class="block px-4 py-2">O nas</a></li>
-      <li><a href="rozwiazania.html" class="block px-4 py-2">Rozwiązania</a></li>
-      <li><a href="kontakt.html" class="block px-4 py-2">Kontakt</a></li>
-    </ul>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1F2937]">
+      <a class="block px-4 py-3" href="index.html">Start</a>
+      <a class="block px-4 py-3" href="o-nas.html">O nas</a>
+      <a class="block px-4 py-3" href="rozwiazania.html">Rozwiązania</a>
+      <a class="block px-4 py-3" href="kontakt.html">Kontakt</a>
+    </div>
   </header>
 
-  <!-- Content -->
-  <main class="pt-24 container mx-auto px-4">
+  <main class="pt-24 max-w-6xl mx-auto px-4 py-16">
     <h1 class="text-3xl font-bold mb-6">Rozwiązania</h1>
     <div class="grid md:grid-cols-3 gap-6">
       <div class="bg-[#1F2937] p-6 rounded-lg">
-        <h2 class="text-xl font-bold mb-2 text-[#00F6D2]">AI Solutions</h2>
+        <h3 class="text-xl font-bold text-[#00F6D2] mb-2">AI Solutions</h3>
         <p class="text-gray-300">Nowoczesne algorytmy i modele AI wspierające biznes.</p>
       </div>
       <div class="bg-[#1F2937] p-6 rounded-lg">
-        <h2 class="text-xl font-bold mb-2 text-[#00F6D2]">Cyberbezpieczeństwo</h2>
-        <p class="text-gray-300">Zaawansowane strategie i narzędzia ochrony danych.</p>
+        <h3 class="text-xl font-bold text-[#00F6D2] mb-2">Cyberbezpieczeństwo</h3>
+        <p class="text-gray-300">Strategie i narzędzia ochrony danych.</p>
       </div>
       <div class="bg-[#1F2937] p-6 rounded-lg">
-        <h2 class="text-xl font-bold mb-2 text-[#00F6D2]">Innowacje</h2>
-        <p class="text-gray-300">Eksperymentalne projekty badawcze i wdrożeniowe.</p>
+        <h3 class="text-xl font-bold text-[#00F6D2] mb-2">Innowacje</h3>
+        <p class="text-gray-300">Projekty badawczo-wdrożeniowe.</p>
       </div>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-[#1F2937] text-center py-4 mt-10">
+  <footer class="bg-[#1F2937] text-center py-6 mt-12">
     <p class="text-gray-400 text-sm">© 2025 Baltic Digital Institute</p>
   </footer>
 
   <script>
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
+    const btn = document.getElementById('menu-btn');
+    const mobile = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => mobile.classList.toggle('hidden'));
   </script>
 </body>
 </html>
