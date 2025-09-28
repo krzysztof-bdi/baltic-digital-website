@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Prosty projekt w TailwindCSS z responsywnym menu" />
-  <title>Poprawiony Projekt Tailwind</title>
+  <meta name="description" content="Prosty projekt w TailwindCSS z animowanym hamburger menu" />
+  <title>Projekt z Animowanym Hamburger Menu</title>
   <link href="dist/output.css" rel="stylesheet">
 </head>
 <body class="font-poppins bg-gray-50 text-gray-900">
@@ -22,16 +22,16 @@
           <a href="#" class="hover:text-indigo-500">Kontakt</a>
         </nav>
         <div class="md:hidden">
-          <button id="menu-button" class="text-gray-700 focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
+          <button id="menu-button" class="relative w-8 h-8 flex flex-col justify-between items-center group">
+            <span class="block h-1 w-full bg-gray-800 rounded transform transition duration-300 ease-in-out group-hover:bg-indigo-500"></span>
+            <span class="block h-1 w-full bg-gray-800 rounded transform transition duration-300 ease-in-out group-hover:bg-indigo-500"></span>
+            <span class="block h-1 w-full bg-gray-800 rounded transform transition duration-300 ease-in-out group-hover:bg-indigo-500"></span>
           </button>
         </div>
       </div>
     </div>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+    <div id="mobile-menu" class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:hidden bg-white shadow-lg">
       <a href="#" class="block px-4 py-2 hover:bg-gray-100">Home</a>
       <a href="#" class="block px-4 py-2 hover:bg-gray-100">O mnie</a>
       <a href="#" class="block px-4 py-2 hover:bg-gray-100">Portfolio</a>
@@ -43,7 +43,7 @@
   <main class="pt-20">
     <section class="max-w-7xl mx-auto p-6">
       <h1 class="text-3xl font-bold mb-4">Witaj na mojej stronie</h1>
-      <p class="text-lg text-gray-700">To jest prosty projekt stworzony z TailwindCSS z responsywnym menu.</p>
+      <p class="text-lg text-gray-700">To jest prosty projekt w TailwindCSS z animowanym hamburger menu.</p>
     </section>
   </main>
 
@@ -52,8 +52,23 @@
     const mobileMenu = document.getElementById('mobile-menu');
 
     menuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('max-h-0');
+      mobileMenu.classList.toggle('max-h-96'); // animacja rozwijania menu
+      menuButton.classList.toggle('open');
     });
   </script>
+
+  <style>
+    /* Animacja hamburgera na krzyżyk */
+    #menu-button.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    #menu-button.open span:nth-child(2) {
+      opacity: 0;
+    }
+    #menu-button.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  </style>
 </body>
 </html>
