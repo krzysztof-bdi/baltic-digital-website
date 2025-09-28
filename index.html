@@ -1,86 +1,148 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baltic Digital Institute</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Baltic Digital Institute — Budujemy Cyfrową Odporność</title>
+  <meta name="description" content="BDI — AI, cyberbezpieczeństwo i edukacja. Transformacje, badania i szkolenia dla biznesu i społeczeństwa." />
+  <meta property="og:title" content="Baltic Digital Institute — Budujemy Cyfrową Odporność" />
+  <meta property="og:description" content="Projektujemy i wdrażamy zaawansowane rozwiązania z zakresu AI i cyberbezpieczeństwa." />
+  <meta property="og:type" content="website" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --baltic-navy:#0A192F; --cyber-turq:#64FFDA; --dark-steel:#112240; --muted:#8892B0; --text:#F9FAFB;
+    }
+    body{font-family:'Lato',sans-serif;background:var(--baltic-navy);color:var(--text);}
+    h1,h2,h3{font-family:'Geist Sans','Lato',sans-serif}
+  </style>
 </head>
-<body class="bg-baltic-navy text-gray-100">
+<body class="min-h-screen flex flex-col">
 
-  <!-- Navbar -->
-  <nav class="navbar flex justify-between items-center">
-    <a href="index.html" class="text-xl font-bold text-cyber-turq">BDI</a>
-    <div class="hidden md:flex space-x-6">
-      <a href="rozwiazania.html">Rozwiązania</a>
-      <a href="o-nas.html">O nas</a>
-      <a href="inicjatywy.html">Inicjatywy</a>
-      <a href="baza-wiedzy.html">Baza wiedzy</a>
-      <a href="kontakt.html">Kontakt</a>
+  <!-- Header / Nav -->
+  <header class="bg-[color:var(--dark-steel)]">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3" aria-label="BDI — Strona główna">
+        <img src="assets/svg/Logo main.svg" alt="Logo Baltic Digital Institute" class="h-8 w-auto">
+        <span class="text-[color:var(--cyber-turq)] font-bold">Baltic Digital Institute</span>
+      </a>
+
+      <nav class="hidden md:flex gap-6 text-sm" aria-label="Główne menu">
+        <a href="index.html" class="hover:text-[color:var(--cyber-turq)]">Start</a>
+        <a href="rozwiazania-dla-biznesu.html" class="hover:text-[color:var(--cyber-turq)]">Rozwiązania</a>
+        <a href="o-nas.html" class="hover:text-[color:var(--cyber-turq)]">O nas</a>
+        <a href="o-nas-zespol.html" class="hover:text-[color:var(--cyber-turq)]">Zespół</a>
+        <a href="baza-wiedzy.html" class="hover:text-[color:var(--cyber-turq)]">Baza wiedzy</a>
+        <a href="kontakt.html" class="px-3 py-2 border border-[color:var(--cyber-turq)] rounded text-[color:var(--cyber-turq)] hover:bg-[color:var(--cyber-turq)] hover:text-[color:var(--baltic-navy)]">Kontakt</a>
+      </nav>
+
+      <button id="mobile-toggle" class="md:hidden p-2" aria-label="Otwórz menu mobilne">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Budujemy Cyfrową Odporność z Mocą AI</h1>
-    <p>Projektujemy i wdrażamy zaawansowane rozwiązania z zakresu AI i cyberbezpieczeństwa, które dają naszym partnerom przewagę konkurencyjną i budują bezpieczną cyfrową przyszłość.</p>
-    <a href="rozwiazania.html" class="btn mt-6">Poznaj nasze rozwiązania dla biznesu</a>
-  </section>
-
-  <!-- Nasze Rozwiązania -->
-  <section class="py-16 px-6 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center text-cyber-turq mb-12">Nasze Rozwiązania</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <a href="rozwiazania-transformacja.html" class="bg-dark-steel p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-cyber-turq">Transformacja Cyfrowa i Wdrożenia</h3>
-        <p class="mt-3">Projektujemy i wdrażamy zintegrowane systemy operacji przychodowych (RevOps), które automatyzują procesy i skalują sprzedaż.</p>
-      </a>
-      <a href="rozwiazania-szkolenia.html" class="bg-dark-steel p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-cyber-turq">Szkolenia Specjalistyczne</h3>
-        <p class="mt-3">Wyposażamy zespoły w kompetencje przyszłości poprzez elitarne szkolenia z zakresu AI i cyberbezpieczeństwa, dostępne z dofinansowaniem.</p>
-      </a>
-      <a href="rozwiazania-badania.html" class="bg-dark-steel p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-cyber-turq">Badania i Certyfikacja</h3>
-        <p class="mt-3">Budujemy regionalne centrum doskonałości, które będzie wyznaczać standardy bezpieczeństwa i jakości dla technologii jutra.</p>
-      </a>
-    </div>
-  </section>
-
-  <!-- Dowody Wiarygodności -->
-  <section class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center text-cyber-turq mb-12">Zaufali nam Liderzy</h2>
-    <div class="space-y-8">
-      <p class="bg-dark-steel p-6 rounded-xl shadow">Zaufał nam wiodący obiekt rekreacyjno-wypoczynkowy na Pomorzu, powierzając nam budowę cyfrowych kanałów sprzedaży.</p>
-      <p class="bg-dark-steel p-6 rounded-xl shadow">Jesteśmy partnerem w strategicznej, międzynarodowej inicjatywie Baltic AI Gigafactory, koordynowanej przez Ministerstwo Cyfryzacji.</p>
-      <div class="bg-dark-steel p-6 rounded-xl shadow">
-        <p>Certyfikaty i rejestry:</p>
-        <ul class="list-disc ml-6 mt-2">
-          <li>ISO 9001:2015</li>
-          <li>Baza Usług Rozwojowych</li>
-          <li>Rejestr Instytucji Szkoleniowych</li>
-        </ul>
+    <!-- mobile -->
+    <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden bg-[color:var(--dark-steel)] transition-all duration-300">
+      <div class="px-4 py-4 flex flex-col gap-2">
+        <a href="index.html">Start</a>
+        <a href="rozwiazania-dla-biznesu.html">Rozwiązania</a>
+        <a href="o-nas.html">O nas</a>
+        <a href="o-nas-zespol.html">Zespół</a>
+        <a href="baza-wiedzy.html">Baza wiedzy</a>
+        <a href="kontakt.html" class="font-semibold">Kontakt</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- Baza Wiedzy -->
-  <section class="py-16 px-6 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center text-cyber-turq mb-12">Najnowsze Analizy</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-dark-steel p-6 rounded-xl shadow">📄 Artykuł 1 (placeholder)</div>
-      <div class="bg-dark-steel p-6 rounded-xl shadow">📄 Artykuł 2 (placeholder)</div>
-      <div class="bg-dark-steel p-6 rounded-xl shadow">📄 Artykuł 3 (placeholder)</div>
-    </div>
-    <div class="text-center mt-8">
-      <a href="baza-wiedzy.html" class="btn">Zobacz wszystkie</a>
-    </div>
-  </section>
+  <main class="flex-grow">
+    <!-- HERO -->
+    <section class="py-20 text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-3xl md:text-4xl font-black mb-4">Budujemy Cyfrową Odporność z Mocą AI</h1>
+        <p class="text-[color:var(--muted)] mb-6">Projektujemy i wdrażamy rozwiązania z zakresu AI i cyberbezpieczeństwa — dla biznesu, administracji i społeczeństwa.</p>
+        <a href="rozwiazania-dla-biznesu.html" class="inline-block bg-[color:var(--cyber-turq)] text-[color:var(--baltic-navy)] px-6 py-3 rounded font-semibold">Poznaj nasze rozwiązania</a>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    © 2025 Baltic Digital Institute. Wszystkie prawa zastrzeżone.
+    <!-- 3 filary -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold mb-6">Nasze Rozwiązania</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="p-6 bg-[color:var(--dark-steel)] rounded-lg">
+          <svg class="w-8 h-8 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2l4 7h-8l4-7z" stroke-width="1.5"/></svg>
+          <h3 class="font-semibold text-lg">Transformacja i Wdrożenia (R-OaaS)</h3>
+          <p class="text-[color:var(--muted)] mt-2">Projektujemy i wdrażamy systemy operacji przychodowych, automatyzację i procesy skalowalnego wzrostu.</p>
+          <a href="rozwiazania-dla-biznesu.html#revops" class="mt-4 inline-block text-[color:var(--cyber-turq)] font-semibold">Dowiedz się więcej →</a>
+        </article>
+
+        <article class="p-6 bg-[color:var(--dark-steel)] rounded-lg">
+          <svg class="w-8 h-8 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12h18" stroke-width="1.5"/></svg>
+          <h3 class="font-semibold text-lg">Szkolenia Specjalistyczne</h3>
+          <p class="text-[color:var(--muted)] mt-2">Praktyczne kursy z AI i cyberbezpieczeństwa — dostępne z dofinansowaniem.</p>
+          <a href="rozwiazania-dla-biznesu.html#szkolenia" class="mt-4 inline-block text-[color:var(--cyber-turq)] font-semibold">Zobacz kursy →</a>
+        </article>
+
+        <article class="p-6 bg-[color:var(--dark-steel)] rounded-lg">
+          <svg class="w-8 h-8 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v20" stroke-width="1.5"/></svg>
+          <h3 class="font-semibold text-lg">Badania i Certyfikacja</h3>
+          <p class="text-[color:var(--muted)] mt-2">Budujemy Baltic AI & Cyber Lab oraz jednostkę certyfikującą — standardy jakości i bezpieczeństwa.</p>
+          <a href="rozwiazania-dla-biznesu.html#badania" class="mt-4 inline-block text-[color:var(--cyber-turq)] font-semibold">Dowiedz się więcej →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Zaufali nam (placeholder logos) -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold mb-6">Zaufali nam</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center">
+        <!-- Use assets/img/partners/*.svg placeholders -->
+        <img src="assets/img/partners/partner-placeholder-1.svg" alt="Partner — placeholder" loading="lazy">
+        <img src="assets/img/partners/partner-placeholder-2.svg" alt="Partner — placeholder" loading="lazy">
+        <img src="assets/img/partners/partner-placeholder-3.svg" alt="Partner — placeholder" loading="lazy">
+        <img src="assets/img/partners/partner-placeholder-4.svg" alt="Partner — placeholder" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Najnowsze analizy (teasery zamiast placeholderów) -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold mb-6">Najnowsze analizy</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="p-6 bg-[color:var(--dark-steel)] rounded-lg">
+          <h3 class="font-semibold">Wkrótce: „Model oceny odporności cyfrowej”</h3>
+          <p class="text-[color:var(--muted)] mt-2">Premiera 2025-10-01 — raport otwierający projekt Odporność 360°.</p>
+          <a href="#" class="text-[color:var(--cyber-turq)]">Więcej →</a>
+        </article>
+
+        <article class="p-6 bg-[color:var(--dark-steel)] rounded-lg">
+          <h3 class="font-semibold">Wkrótce: Przegląd rynku AI w regionie Bałtyckim</h3>
+          <p class="text-[color:var(--muted)] mt-2">Krótkie podsumowanie trendów i potencjalnych partnerstw.</p>
+          <a href="#" class="text-[color:var(--cyber-turq)]">Więcej →</a>
+        </article>
+
+        <article class="p-6 bg-[color:var(--dark-steel)] rounded-lg">
+          <h3 class="font-semibold">Wkrótce: Case study — Transformacja Feniks</h3>
+          <p class="text-[color:var(--muted)] mt-2">Skrót wyników wdrożenia i wpływ na przychody.</p>
+          <a href="#" class="text-[color:var(--cyber-turq)]">Więcej →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[color:var(--dark-steel)] text-[color:var(--muted)] py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div>© 2025 Baltic Digital Institute. Wszystkie prawa zastrzeżone.</div>
+      <div class="text-sm mt-2">Dane rejestrowe: NIP: 5213869944 • KRS: 0000890382</div>
+    </div>
   </footer>
 
+<script>
+  // mobile menu toggle
+  const btn = document.getElementById('mobile-toggle');
+  const menu = document.getElementById('mobile-menu');
+  if (btn) btn.addEventListener('click', () => {
+    menu.style.maxHeight = (menu.style.maxHeight && menu.style.maxHeight !== '0px') ? '0px' : menu.scrollHeight + 'px';
+  });
+</script>
 </body>
 </html>
