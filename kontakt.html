@@ -1,64 +1,43 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kontakt — Baltic Digital Institute</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style> body { font-family: 'Inter','Lato', sans-serif; } </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Baltic Digital Institute</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-[#0A192F] text-white antialiased">
-  <header class="fixed top-0 left-0 right-0 bg-[#0A192F]/90 z-50">
-    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-      <a href="index.html" class="flex items-center gap-3"><img src="assets/svg/Logo main.svg" class="h-10" alt="" /><span class="font-bold">Baltic Digital Institute</span></a>
-      <nav class="hidden md:flex gap-8">
-        <a href="index.html" class="hover:text-[#64FFDA]">Start</a>
-        <a href="o-nas.html" class="hover:text-[#64FFDA]">O nas</a>
-        <a href="rozwiazania.html" class="hover:text-[#64FFDA]">Rozwiązania</a>
-        <a href="kontakt.html" class="hover:text-[#64FFDA]">Kontakt</a>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="assets/svg/Logo main.svg" alt="Baltic Digital Institute" class="h-10">
+      </a>
+      <nav class="space-x-6">
+        <a href="index.html#onas" class="hover:text-blue-600">O nas</a>
+        <a href="index.html#rozwiazania" class="hover:text-blue-600">Rozwiązania</a>
+        <a href="index.html#zaufanie" class="hover:text-blue-600">Zaufanie</a>
+        <a href="kontakt.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Kontakt</a>
       </nav>
-      <button id="menu-btn" class="md:hidden p-1 flex flex-col gap-1"><span class="block w-6 h-0.5 bg-white"></span><span class="block w-6 h-0.5 bg-white"></span><span class="block w-6 h-0.5 bg-white"></span></button>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-[#0A192F]/95 text-center">
-      <a href="index.html" class="block px-6 py-3 hover:text-[#64FFDA]">Start</a>
-      <a href="o-nas.html" class="block px-6 py-3 hover:text-[#64FFDA]">O nas</a>
-      <a href="rozwiazania.html" class="block px-6 py-3 hover:text-[#64FFDA]">Rozwiązania</a>
-      <a href="kontakt.html" class="block px-6 py-3 hover:text-[#64FFDA]">Kontakt</a>
     </div>
   </header>
 
-  <main class="pt-24">
-    <section class="py-12 text-center bg-[#0F2238]">
-      <div class="max-w-4xl mx-auto px-6">
-        <h1 class="text-4xl font-bold mb-4">Kontakt</h1>
-        <p class="text-gray-300 mb-6">Masz pytanie? Wypełnij formularz kontaktowy poniżej — otrzymasz powiadomienie e-mail zgodnie z ustawieniami Google Forms.</p>
-      </div>
-    </section>
-
-    <section class="max-w-5xl mx-auto px-6 py-12">
-      <!-- Google Form (embed) -->
-      <div class="bg-[#0A192F] rounded-xl p-4 shadow">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxBdozm1NwBgaxoBVKHq1TcmwgR9sHYaQH_vp3yaFeN_HUGg/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>
-      </div>
-
-      <div class="mt-8 text-gray-300 text-center">
-        <p>Alternatywnie: <a href="mailto:kontakt@baltic-digital.org" class="text-[#64FFDA] hover:underline">napisz do nas e-mail</a></p>
-        <p class="mt-4 text-sm">Adres biura: ul. Hołdu Pruskiego 6, 80-741 Gdańsk</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-[#0A192F]/95 py-8 text-gray-400 text-center">
-    <div class="max-w-6xl mx-auto px-6">
-      <p>© 2025 Baltic Digital Institute</p>
+  <!-- Kontakt -->
+  <section class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold mb-8 text-center">Skontaktuj się z nami</h2>
+    <div class="max-w-3xl mx-auto">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxBdozm1NwBgaxoBVKHq1TcmwgR9sHYaQH_vp3yaFeN_HUGg/viewform?embedded=true" 
+              width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
+        Ładowanie…
+      </iframe>
     </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 Baltic Digital Institute. Wszelkie prawa zastrzeżone.</p>
   </footer>
 
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-  </script>
 </body>
 </html>
