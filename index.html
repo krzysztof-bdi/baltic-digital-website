@@ -3,58 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Prosty projekt w TailwindCSS z animowanym hamburger menu" />
-  <title>Projekt z Animowanym Hamburger Menu</title>
+  <meta name="description" content="Projekt z nowoczesnym hamburger menu z TailwindCSS" />
+  <title>Nowoczesne Menu Hamburger</title>
   <link href="dist/output.css" rel="stylesheet">
 </head>
 <body class="font-poppins bg-gray-50 text-gray-900">
-  <!-- Header -->
-  <header class="bg-white shadow-md fixed w-full z-10">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-md fixed w-full z-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
-        <div class="flex-shrink-0">
-          <a href="#" class="text-xl font-bold text-indigo-600">MojaStrona</a>
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold text-brand-dark">MojaStrona</a>
         </div>
         <nav class="hidden md:flex space-x-6">
-          <a href="#" class="hover:text-indigo-500">Home</a>
-          <a href="#" class="hover:text-indigo-500">O mnie</a>
-          <a href="#" class="hover:text-indigo-500">Portfolio</a>
-          <a href="#" class="hover:text-indigo-500">Kontakt</a>
+          <a href="#" class="hover:text-brand-dark transition">Home</a>
+          <a href="#" class="hover:text-brand-dark transition">O mnie</a>
+          <a href="#" class="hover:text-brand-dark transition">Portfolio</a>
+          <a href="#" class="hover:text-brand-dark transition">Kontakt</a>
         </nav>
-        <div class="md:hidden">
+        <!-- Hamburger Button -->
+        <div class="md:hidden flex items-center">
           <button id="menu-button" class="relative w-8 h-8 flex flex-col justify-between items-center group">
-            <span class="block h-1 w-full bg-gray-800 rounded transform transition duration-300 ease-in-out group-hover:bg-indigo-500"></span>
-            <span class="block h-1 w-full bg-gray-800 rounded transform transition duration-300 ease-in-out group-hover:bg-indigo-500"></span>
-            <span class="block h-1 w-full bg-gray-800 rounded transform transition duration-300 ease-in-out group-hover:bg-indigo-500"></span>
+            <span class="block h-1 w-full bg-brand-dark rounded transform transition duration-300 ease-in-out group-hover:bg-brand-light"></span>
+            <span class="block h-1 w-full bg-brand-dark rounded transform transition duration-300 ease-in-out group-hover:bg-brand-light"></span>
+            <span class="block h-1 w-full bg-brand-dark rounded transform transition duration-300 ease-in-out group-hover:bg-brand-light"></span>
           </button>
         </div>
       </div>
     </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:hidden bg-white shadow-lg">
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Home</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">O mnie</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Portfolio</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kontakt</a>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out md:hidden bg-brand-light">
+      <a href="#" class="block px-6 py-3 text-white hover:bg-brand-dark opacity-0 transform translate-y-4 transition-all duration-500">Home</a>
+      <a href="#" class="block px-6 py-3 text-white hover:bg-brand-dark opacity-0 transform translate-y-4 transition-all duration-500 delay-75">O mnie</a>
+      <a href="#" class="block px-6 py-3 text-white hover:bg-brand-dark opacity-0 transform translate-y-4 transition-all duration-500 delay-150">Portfolio</a>
+      <a href="#" class="block px-6 py-3 text-white hover:bg-brand-dark opacity-0 transform translate-y-4 transition-all duration-500 delay-225">Kontakt</a>
     </div>
   </header>
 
-  <!-- Main Content -->
+  <!-- MAIN CONTENT -->
   <main class="pt-20">
     <section class="max-w-7xl mx-auto p-6">
-      <h1 class="text-3xl font-bold mb-4">Witaj na mojej stronie</h1>
-      <p class="text-lg text-gray-700">To jest prosty projekt w TailwindCSS z animowanym hamburger menu.</p>
+      <h1 class="text-3xl font-bold mb-4 text-brand-dark">Witaj na mojej stronie</h1>
+      <p class="text-lg text-gray-700">Teraz Twoje hamburger menu ma nowoczesny styl, animacje i paletę kolorów premium.</p>
     </section>
   </main>
 
   <script>
     const menuButton = document.getElementById('menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
+    const menuLinks = mobileMenu.querySelectorAll("a");
 
     menuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('max-h-0');
-      mobileMenu.classList.toggle('max-h-96'); // animacja rozwijania menu
       menuButton.classList.toggle('open');
+      mobileMenu.classList.toggle('max-h-96');
+      mobileMenu.classList.toggle('opacity-100');
+
+      menuLinks.forEach((link, index) => {
+        if (mobileMenu.classList.contains('opacity-100')) {
+          link.classList.remove("opacity-0", "translate-y-4");
+        } else {
+          link.classList.add("opacity-0", "translate-y-4");
+        }
+      });
     });
   </script>
 
