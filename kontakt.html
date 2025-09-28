@@ -3,79 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kontakt – Baltic Digital Institute</title>
-  <meta name="description" content="Skontaktuj się z Baltic Digital Institute — wypełnij formularz dotyczący współpracy, szkoleń lub partnerstw." />
+  <title>Kontakt — Baltic Digital Institute</title>
+  <meta name="description" content="Skontaktuj się z Baltic Digital Institute — formularz kontaktowy, dane rejestrowe i adres." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#0A192F] text-[#F9FAFB] antialiased">
-
-  <!-- Navbar (prosty, spójny) -->
-  <header class="bg-[#0A192F]">
+<body class="bg-[#0A192F] text-white font-sans">
+  <header class="bg-[#112240]">
     <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="flex items-center space-x-3 text-[#64FFDA] font-bold">
-        <img src="assets/svg/Logo main.svg" alt="BDI logo" class="h-8 w-auto" />
-        <span>Baltic Digital Institute</span>
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/svg/Logo main.svg" alt="Logo BDI" class="h-8">
+        <span class="text-[#64FFDA] font-bold">BDI</span>
       </a>
-      <nav class="hidden md:flex space-x-6 text-sm">
-        <a href="index.html" class="hover:text-[#64FFDA]">Start</a>
-        <a href="rozwiazania-dla-biznesu.html" class="hover:text-[#64FFDA]">Rozwiązania</a>
-        <a href="o-nas.html" class="hover:text-[#64FFDA]">O nas</a>
-        <a href="o-nas-zespol.html" class="hover:text-[#64FFDA]">Zespół</a>
-        <a href="baza-wiedzy.html" class="hover:text-[#64FFDA]">Baza wiedzy</a>
+      <nav class="hidden md:flex gap-6">
+        <a href="index.html">Start</a>
+        <a href="o-nas.html">O nas</a>
+        <a href="o-nas-zespol.html">Zespół</a>
+        <a href="rozwiazania-dla-biznesu.html">Rozwiązania</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="bg-[#112240] py-16 text-center">
-    <div class="max-w-4xl mx-auto px-6">
-      <h1 class="text-3xl md:text-4xl font-bold mb-3">Skontaktuj się z nami</h1>
-      <p class="text-gray-300 max-w-2xl mx-auto">Masz pytanie o współpracę, szkolenia lub badania? Napisz — odpowiadamy zwykle w ciągu 2–3 dni roboczych.</p>
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-black mb-4">Skontaktuj się z nami</h1>
+    <p class="text-gray-300 mb-6">Wypełnij formularz — odpowiemy najszybciej jak to możliwe. Jeśli wolisz, napisz bezpośrednio na <a href="mailto:office@baltic-digital.org" class="text-[#64FFDA]">office@baltic-digital.org</a>.</p>
+
+    <!-- EMBEDDED GOOGLE FORM -->
+    <div class="mb-6">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxBdozm1NwBgaxoBVKHq1TcmwgR9sHYaQH_vp3yaFeN_HUGg/viewform?embedded=true"
+              width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" title="Formularz kontaktowy Baltic Digital Institute">Ładowanie…</iframe>
+
+      <!-- noscript fallback (link + basic mailto) -->
+      <noscript>
+        <p class="text-gray-300">Jeśli nie widzisz formularza, otwórz go bezpośrednio: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxBdozm1NwBgaxoBVKHq1TcmwgR9sHYaQH_vp3yaFeN_HUGg/viewform" target="_blank" rel="noopener noreferrer" class="text-[#64FFDA]">Formularz kontaktowy (Google Forms)</a>.</p>
+      </noscript>
     </div>
-  </section>
 
-  <!-- Kontakt: formularz osadzony -->
-  <main class="max-w-5xl mx-auto px-6 py-12">
-    <div class="grid md:grid-cols-12 gap-8">
-      <!-- Left: dane -->
-      <div class="md:col-span-5 bg-[#112240] p-6 rounded-lg shadow">
-        <h2 class="text-xl font-semibold mb-4">Dane kontaktowe</h2>
-        <p class="text-gray-300 mb-2"><strong>Adres:</strong><br>ul. Hołdu Pruskiego 6, 80-322 Gdańsk, Polska</p>
-        <p class="text-gray-300 mb-2"><strong>E-mail:</strong><br><a href="mailto:office@baltic-digital.org" class="text-[#64FFDA]">office@baltic-digital.org</a></p>
-        <p class="text-gray-300 mb-2"><strong>Dane rejestrowe:</strong><br>NIP: 5213869944 • KRS: 0000890382</p>
-        <hr class="my-4 border-gray-700" />
-        <p class="text-sm text-gray-400">Wysyłając formularz wyrażasz zgodę na przetwarzanie danych osobowych w celu obsługi zapytania (RODO). Administratorem danych jest Baltic Digital Institute.</p>
-      </div>
+    <!-- GDPR / RODO -->
+    <section class="text-gray-400 text-sm bg-[#112240] p-4 rounded">
+      <p class="mb-2"><strong>RODO / Przetwarzanie danych:</strong> Wysyłając formularz, wyrażasz zgodę na przetwarzanie danych przez Baltic Digital Institute w celu obsługi zapytania. Administratorem danych jest Baltic Digital Institute. Masz prawo dostępu do swoich danych i do ich usunięcia. Jeśli chcesz, skontaktuj się: <a href="mailto:office@baltic-digital.org" class="text-[#64FFDA]">office@baltic-digital.org</a>.</p>
+    </section>
 
-      <!-- Right: iframe Google Form -->
-      <div class="md:col-span-7">
-        <div class="bg-[#112240] p-4 rounded-lg shadow">
-          <h3 class="text-lg font-semibold mb-2 text-center">Formularz kontaktowy</h3>
-
-          <!-- IMPORTANT: replace the src below with your form's "embed" link if you have the embed link.
-               The provided link in the form variable is the public view link; embedding via "https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true" works. -->
-          <div class="w-full" style="min-height:480px;">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxBdozm1NwBgaxoBVKHq1TcmwgR9sHYaQH_vp3yaFeN_HUGg/viewform?embedded=true"
-                    width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0" class="rounded"
-                    title="Formularz kontaktowy Baltic Digital Institute">
-              Ładowanie…
-            </iframe>
-          </div>
-
-          <!-- noscript fallback -->
-          <noscript class="block mt-4 text-sm text-gray-300">
-            Formularz kontaktowy wymaga włączonego JavaScript. Kliknij tu, aby wypełnić formularz: 
-            <a class="text-[#64FFDA] underline" href="https://docs.google.com/forms/d/e/1FAIpQLSdxBdozm1NwBgaxoBVKHq1TcmwgR9sHYaQH_vp3yaFeN_HUGg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Otwórz formularz</a>.
-          </noscript>
-
-        </div>
-      </div>
-    </div>
+    <section class="mt-8 text-gray-300">
+      <h2 class="text-lg font-semibold mb-2">Dane siedziby</h2>
+      <p>ul. Hołdu Pruskiego 6<br>80-322 Gdańsk, Polska</p>
+      <p class="mt-2 text-sm">NIP: 5213869944 • KRS: 0000890382</p>
+    </section>
   </main>
 
-  <footer class="bg-[#0A192F] py-6 text-center text-gray-400 text-sm">
+  <footer class="bg-[#112240] py-8 text-center text-gray-400">
     © 2025 Baltic Digital Institute
   </footer>
-
 </body>
 </html>
