@@ -41,13 +41,147 @@
     </div>
   </header>
 
-  <!-- ...reszta treści bez zmian... -->
+  <main class="flex-grow">
+    <section class="py-12 text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-3xl md:text-4xl font-black mb-2">Nasz Zespół</h1>
+        <p class="text-[color:var(--muted)] mb-6">Pracownicy BDI — osoby odpowiedzialne za operacje codzienne, projekty i rozwój instytutu. Poniżej znajdziesz role ludzkie oraz listę agentów Baltic Brain (role cyfrowe).</p>
+      </div>
+    </section>
+
+    <!-- ZESPÓŁ (wyższa widoczność) -->
+    <section class="max-w-6xl mx-auto px-4 py-6">
+      <h2 class="text-2xl font-bold mb-4">Zespół operacyjny</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Prezentuj realne zdjęcia lub placeholdery jeśli nie ma -->
+        <article class="card p-6 text-center">
+          <img src="assets/img/krzysztof-rek.jpg" alt="Krzysztof Rek — Prezes Zarządu" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Krzysztof Rek</h3>
+          <p class="text-[color:var(--muted)]">Prezes Zarządu — Lider strategiczny, Architekt Systemu Baltic.</p>
+        </article>
+
+        <article class="card p-6 text-center">
+          <img src="assets/img/monika-zawadzka.jpg" alt="Monika Zawadzka — Wiceprezes Zarządu" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Monika Zawadzka</h3>
+          <p class="text-[color:var(--muted)]">Wiceprezes — doradztwo ESG i etyka AI.</p>
+        </article>
+
+        <article class="card p-6 text-center">
+          <img src="assets/img/danuta-rek.jpg" alt="Danuta Rek — profil" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Danuta Rek</h3>
+          <p class="text-[color:var(--muted)]">Wsparcie projektowe / regionalizm.</p>
+        </article>
+
+        <!-- inne osoby (jeśli nie masz zdjęcia, użyj placeholder-portrait.jpg) -->
+        <article class="card p-6 text-center">
+          <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder — Adam Derbich" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Adam Derbich</h3>
+          <p class="text-[color:var(--muted)]">Administrator Systemów i Bezpieczeństwa.</p>
+        </article>
+
+        <article class="card p-6 text-center">
+          <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder — Olga Szudzik" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Olga Szudzik</h3>
+          <p class="text-[color:var(--muted)]">Project Manager / Koordynator komunikacji (p.o.).</p>
+        </article>
+
+        <article class="card p-6 text-center">
+          <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder — Marta Firlej" loading="lazy" class="w-32 h-32 rounded-full mx-auto object-cover mb-4">
+          <h3 class="text-xl font-semibold">Marta Firlej</h3>
+          <p class="text-[color:var(--muted)]">Główna księgowa.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Rady -->
+    <section class="max-w-6xl mx-auto px-4 py-8">
+      <h2 class="text-2xl font-bold mb-4">Rada Programowa</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <article class="card p-5 text-center">
+          <img src="assets/img/adam-przadka.jpg" alt="dr Adam Prządka — Rada Programowa" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">dr Adam Prządka</h3>
+          <p class="text-[color:var(--muted)] text-sm">Ekspert data science.</p>
+        </article>
+
+        <article class="card p-5 text-center">
+          <img src="assets/img/karolina-janczukowicz.jpg" alt="dr Karolina Janczukowicz — Rada Programowa" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">dr Karolina Janczukowicz</h3>
+          <p class="text-[color:var(--muted)] text-sm">Edukacja i psycholingwistyka.</p>
+        </article>
+
+        <article class="card p-5 text-center">
+          <img src="assets/img/zuzanna-wiorogorska.jpg" alt="dr Zuzanna Wiorogórska — Rada Programowa" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">dr Zuzanna Wiorogórska</h3>
+          <p class="text-[color:var(--muted)] text-sm">Ekspertka informacji naukowej.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Rada Nadzorcza -->
+    <section class="max-w-6xl mx-auto px-4 py-8">
+      <h2 class="text-2xl font-bold mb-4">Rada Nadzorcza</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <article class="card p-5 text-center">
+          <img src="assets/img/miroslaw-lukaszewicz.jpg" alt="dr Mirosław Łukasiewicz — Rada Nadzorcza" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">dr Mirosław Łukasiewicz</h3>
+          <p class="text-[color:var(--muted)] text-sm">Ekspert transferu technologii.</p>
+        </article>
+
+        <article class="card p-5 text-center">
+          <img src="assets/img/joanna-kosowicz.jpg" alt="Joanna Kosowicz — Rada Nadzorcza" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">Joanna Kosowicz</h3>
+          <p class="text-[color:var(--muted)] text-sm">Architekt — BIM.</p>
+        </article>
+
+        <article class="card p-5 text-center">
+          <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder — Aleksandra Natalia Mogadorska" loading="lazy" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover">
+          <h3 class="font-semibold">Aleksandra Natalia Mogadorska</h3>
+          <p class="text-[color:var(--muted)] text-sm">Członek Rady Nadzorczej — profil uzupełniamy.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Baltic Brain — agenci -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold mb-6">Baltic Brain — role cyfrowe (agenci AI)</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Marcin</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Wiedzy Strategicznej — streszczenia i analizy dla zarządu.</p>
+        </div>
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Maria</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Analizy Rynku — monitorowanie szans i zagrożeń.</p>
+        </div>
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Patryk</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Koordynacji Projektów (PMO).</p>
+        </div>
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Ryszard</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Analityki Ryzyka.</p>
+        </div>
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Agnieszka</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Sprawozdawczy — automatyczne raporty.</p>
+        </div>
+        <div class="card p-4">
+          <h3 class="font-semibold text-[color:var(--cyber-turq)]">Ola</h3>
+          <p class="text-[color:var(--muted)] text-sm mt-2">Agent Kreatywny (copywriting).</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer class="bg-[color:var(--dark-steel)] text-[color:var(--muted)] py-8 text-center">
-    <div>© 2025 Baltic Digital Institute</div>
+    <div class="max-w-7xl mx-auto px-4">
+      <div>© 2025 Baltic Digital Institute</div>
+    </div>
   </footer>
 
   <script>
+    // prosty mobile toggle
     const btn = document.getElementById('mobile-toggle');
     const menu = document.getElementById('mobile-menu');
     if (btn) btn.addEventListener('click', () => {
