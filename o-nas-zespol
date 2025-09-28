@@ -1,302 +1,133 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nasz Zespół | Baltic Digital Institute</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <a href="/" class="logo">BDI</a>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="/">Strona Główna</a></li>
-            <li><a href="/rozwiazania.html">Rozwiązania</a></li>
-            <li><a href="/inicjatywy.html">Inicjatywy</a></li>
-            <li><a href="/baza-wiedzy.html">Baza Wiedzy</a></li>
-            <li><a href="/o-nas.html">O Nas</a></li>
-            <li><a href="/o-nas-zespol.html" class="active">Nasz Zespół</a></li>
-            <li><a href="/kontakt.html">Kontakt</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zespół – Baltic Digital Institute</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#0A192F] text-[#F9FAFB]">
+  <!-- Navbar -->
+  <nav class="bg-[#0A192F] p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-[#64FFDA] font-bold text-xl">BDI</a>
+      <div class="space-x-6">
+        <a href="index.html" class="hover:text-[#64FFDA]">Start</a>
+        <a href="rozwiazania-dla-biznesu.html" class="hover:text-[#64FFDA]">Rozwiązania</a>
+        <a href="inicjatywy.html" class="hover:text-[#64FFDA]">Inicjatywy</a>
+        <a href="baza-wiedzy.html" class="hover:text-[#64FFDA]">Baza wiedzy</a>
+        <a href="o-nas.html" class="hover:text-[#64FFDA]">O nas</a>
+        <a href="o-nas-zespol.html" class="text-[#64FFDA] font-semibold">Zespół</a>
+        <a href="kontakt.html" class="hover:text-[#64FFDA]">Kontakt</a>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <main>
-      <section class="hero dark-bg">
-        <div class="container">
-          <h1>Nasz Zespół Hybrydowy</h1>
-          <p>
-            Baltic Digital Institute działa w unikalnym modelu: łączymy
-            <strong>ludzi</strong> i <strong>agentów AI</strong> w ramach
-            <em>Systemu Operacyjnego Baltic</em>. Razem tworzymy ekosystem,
-            który pozwala osiągać
-            <strong>ekstremalną efektywność</strong> i dostarczać naszym
-            partnerom realne rezultaty.
-          </p>
-        </div>
-      </section>
+  <!-- Hero -->
+  <section class="bg-[#112240] py-20 text-center">
+    <h1 class="text-4xl font-bold mb-4">Nasz Zespół</h1>
+    <p class="text-lg text-gray-300">Ludzie i agenci cyfrowi współpracujący w modelu hybrydowym</p>
+  </section>
 
-      <!-- ZESPÓŁ LUDZKI -->
-      <section class="team-human">
-        <div class="container">
-          <h2>Zespół Ludzki</h2>
-          <div class="team-grid">
-            <!-- Krzysztof Rek -->
-            <article class="team-member">
-              <img
-                src="/assets/img/krzysztof-rek.jpg"
-                alt="Krzysztof Rek"
-                onerror="this.src='/assets/img/placeholder-portrait.jpg'"
-              />
-              <h3>Krzysztof Rek</h3>
-              <p><strong>Lider Strategiczny</strong></p>
-              <p>
-                Odpowiada za wyznaczanie strategicznego kierunku, projektowanie
-                Systemu Operacyjnego Baltic, nadzór nad innowacjami oraz
-                sprzedażą. Stopniowo deleguje role operacyjne, zachowując
-                kluczowe decyzje strategiczne.
-              </p>
-            </article>
-
-            <!-- Monika Zawadzka -->
-            <article class="team-member">
-              <img
-                src="/assets/img/monika-zawadzka.jpg"
-                alt="Monika Zawadzka"
-                onerror="this.src='/assets/img/placeholder-portrait.jpg'"
-              />
-              <h3>Monika Zawadzka</h3>
-              <p><strong>Doradca ds. Etyki AI i ESG</strong></p>
-              <p>
-                Wspiera organizację w obszarach etyki sztucznej inteligencji,
-                zrównoważonego rozwoju i wizerunku. Zapewnia, że rozwój
-                technologiczny idzie w parze z odpowiedzialnością społeczną.
-              </p>
-            </article>
-
-            <!-- Adam Derbich -->
-            <article class="team-member">
-              <img
-                src="/assets/img/placeholder-portrait.jpg"
-                alt="Adam Derbich"
-              />
-              <h3>Adam Derbich</h3>
-              <p><strong>Administrator Systemów i Bezpieczeństwa</strong></p>
-              <p>
-                Zapewnia niezawodność, bezpieczeństwo i dostępność systemów.
-                Odpowiada za audyty, alerty i incydenty bezpieczeństwa.
-              </p>
-            </article>
-
-            <!-- Olga Szudzik -->
-            <article class="team-member">
-              <img
-                src="/assets/img/placeholder-portrait.jpg"
-                alt="Olga Szudzik"
-              />
-              <h3>Olga Szudzik</h3>
-              <p><strong>Project Manager / Koordynator Komunikacji (p.o.)</strong></p>
-              <p>
-                Kieruje Projektem Feniks i pełni obowiązki koordynatora
-                komunikacji. Docelowo obejmie rolę Kierownika Operacyjnego.
-              </p>
-            </article>
-
-            <!-- Małgorzata Adamczak -->
-            <article class="team-member">
-              <img
-                src="/assets/img/placeholder-portrait.jpg"
-                alt="Małgorzata Adamczak"
-              />
-              <h3>Małgorzata Adamczak</h3>
-              <p><strong>Project Manager</strong></p>
-              <p>
-                Prowadzi projekt WEKTOR. Docelowo obejmie rolę Lidera Sprzedaży,
-                budując i zarządzając lejkiem sprzedażowym BDI.
-              </p>
-            </article>
-
-            <!-- Marta Firlej -->
-            <article class="team-member">
-              <img
-                src="/assets/img/placeholder-portrait.jpg"
-                alt="Marta Firlej"
-              />
-              <h3>Marta Firlej</h3>
-              <p><strong>Główny Księgowy</strong></p>
-              <p>
-                Odpowiada za poprawność i zgodność wszystkich operacji
-                księgowych. Reaguje na transakcje wymagające uwagi i obsługuje
-                zapytania z urzędów.
-              </p>
-            </article>
-
-            <!-- Krzysztof Lizak -->
-            <article class="team-member">
-              <img
-                src="/assets/img/placeholder-portrait.jpg"
-                alt="Krzysztof Lizak"
-              />
-              <h3>Krzysztof Lizak</h3>
-              <p><strong>Administrator Biura i IODO</strong></p>
-              <p>
-                Zarządza przestrzenią biurową i organizacją wydarzeń. Pełni
-                funkcję Inspektora Ochrony Danych, dbając o zgodność procesów z
-                RODO.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ZESPÓŁ CYFROWY -->
-      <section class="team-digital dark-bg">
-        <div class="container">
-          <h2>Baltic Brain – Nasi Agenci AI</h2>
-          <p>
-            Sieć wyspecjalizowanych agentów AI wspiera wszystkie procesy BDI –
-            od analizy rynku, przez zarządzanie projektami, po finanse i HR.
-          </p>
-
-          <div class="team-grid">
-            <article class="team-member">
-              <h3>Marcin</h3>
-              <p><strong>Agent Wiedzy Strategicznej</strong></p>
-              <p>
-                Doradca zarządu, dostarcza strategiczne podsumowania i wglądy na
-                podstawie całej bazy wiedzy organizacji.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Maria</h3>
-              <p><strong>Agent Analizy Rynku</strong></p>
-              <p>
-                Monitoruje otoczenie zewnętrzne, identyfikuje szanse i zagrożenia
-                oraz proponuje działania strategiczne.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Patryk</h3>
-              <p><strong>Agent Koordynacji Projektów</strong></p>
-              <p>
-                Zapewnia standaryzację projektów, automatycznie tworząc ich
-                strukturę i dokumentację.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Ryszard</h3>
-              <p><strong>Agent Analityki Ryzyka</strong></p>
-              <p>
-                Monitoruje projekty i prognozuje ryzyka, eskalując je do
-                managerów.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Agnieszka</h3>
-              <p><strong>Agent Sprawozdawczy</strong></p>
-              <p>
-                Automatycznie tworzy i dystrybuuje raporty statusu projektów.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Ola</h3>
-              <p><strong>Agent Kreatywny</strong></p>
-              <p>
-                Generuje i adaptuje treści tekstowe spójne z głosem marki.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Karol</h3>
-              <p><strong>Agent Wizualny</strong></p>
-              <p>
-                Wspiera produkcję multimediów, od grafik po wideo z awatarami.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Justyna</h3>
-              <p><strong>Agent Analityki Marketingowej</strong></p>
-              <p>
-                Analizuje dane marketingowe i dostarcza wnioski dla kampanii.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Kuba</h3>
-              <p><strong>Asystent Sprzedaży</strong></p>
-              <p>
-                Przygotowuje briefy o klientach i wspiera procesy CRM.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Ania</h3>
-              <p><strong>Agent Finansowy</strong></p>
-              <p>
-                Automatyzuje procesy finansowe, od faktur po windykację.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Krystian</h3>
-              <p><strong>Agent Analityki Finansowej</strong></p>
-              <p>
-                Generuje raporty finansowe i dostarcza wgląd w budżet w czasie
-                rzeczywistym.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Jola</h3>
-              <p><strong>Agent HR (Rekrutacja i Onboarding)</strong></p>
-              <p>
-                Automatyzuje proces rekrutacji i onboardingu nowych talentów.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Jarek</h3>
-              <p><strong>Agent Administracji HR</strong></p>
-              <p>
-                Obsługuje procesy urlopowe i odpowiada na pytania pracowników.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Michał</h3>
-              <p><strong>Agent Helpdesku IT</strong></p>
-              <p>
-                Rozwiązuje proste problemy techniczne i eskaluje trudniejsze
-                przypadki.
-              </p>
-            </article>
-
-            <article class="team-member">
-              <h3>Mariusz</h3>
-              <p><strong>Agent ds. Zgodności</strong></p>
-              <p>
-                Monitoruje zgodność z regulacjami i alertuje o zmianach w
-                przepisach.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2025 Baltic Digital Institute. Wszystkie prawa zastrzeżone.</p>
+  <!-- Zarząd -->
+  <section class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Zarząd</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Krzysztof Rek -->
+      <div class="bg-[#112240] p-6 rounded-lg text-center shadow-lg">
+        <img src="assets/img/krzysztof-rek.jpg" alt="Krzysztof Rek" class="w-40 h-40 rounded-full mx-auto mb-4 object-cover">
+        <h3 class="text-xl font-semibold">Krzysztof Rek</h3>
+        <p class="text-gray-400">Prezes Zarządu</p>
       </div>
-    </footer>
-  </body>
+      <!-- Monika Zawadzka -->
+      <div class="bg-[#112240] p-6 rounded-lg text-center shadow-lg">
+        <img src="assets/img/monika-zawadzka.jpg" alt="Monika Zawadzka" class="w-40 h-40 rounded-full mx-auto mb-4 object-cover">
+        <h3 class="text-xl font-semibold">Monika Zawadzka</h3>
+        <p class="text-gray-400">Członek Zarządu</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rada Programowa -->
+  <section class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Rada Programowa</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-[#112240] p-6 rounded-lg text-center shadow-lg">
+        <img src="assets/img/adam-przadka.jpg" alt="Adam Prządka" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+        <h3 class="text-lg font-semibold">Adam Prządka</h3>
+      </div>
+      <div class="bg-[#112240] p-6 rounded-lg text-center shadow-lg">
+        <img src="assets/img/danuta-rek.jpg" alt="Danuta Rek" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+        <h3 class="text-lg font-semibold">Danuta Rek</h3>
+      </div>
+      <div class="bg-[#112240] p-6 rounded-lg text-center shadow-lg">
+        <img src="assets/img/joanna-kosowicz.jpg" alt="Joanna Kosowicz" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+        <h3 class="text-lg font-semibold">Joanna Kosowicz</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rada Nadzorcza -->
+  <section class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Rada Nadzorcza</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-[#112240] p-6 rounded-lg text-center shadow-lg">
+        <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+        <h3 class="text-lg font-semibold">Członek Rady 1</h3>
+      </div>
+      <div class="bg-[#112240] p-6 rounded-lg text-center shadow-lg">
+        <img src="assets/img/placeholder-portrait.jpg" alt="Placeholder" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+        <h3 class="text-lg font-semibold">Członek Rady 2</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Role Ludzkie -->
+  <section class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Role Ludzkie</h2>
+    <ul class="max-w-2xl mx-auto space-y-4 text-center text-gray-300">
+      <li><span class="font-semibold text-[#64FFDA]">Lider Strategiczny:</span> wyznacza kierunek działań BDI</li>
+      <li><span class="font-semibold text-[#64FFDA]">Doradcy:</span> wspierają w analizach i decyzjach</li>
+      <li><span class="font-semibold text-[#64FFDA]">Architekci AI:</span> projektują procesy współpracy z agentami cyfrowymi</li>
+      <li><span class="font-semibold text-[#64FFDA]">Administratorzy:</span> dbają o infrastrukturę</li>
+      <li><span class="font-semibold text-[#64FFDA]">Project Managerowie:</span> prowadzą inicjatywy i wdrożenia</li>
+    </ul>
+  </section>
+
+  <!-- Role Cyfrowe -->
+  <section class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Role Cyfrowe – Baltic Brain</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-[#112240] p-6 rounded-lg shadow-lg text-center">
+        <h3 class="text-xl font-semibold text-[#64FFDA]">Marcin</h3>
+        <p class="text-gray-400">Agent ds. analiz strategicznych</p>
+      </div>
+      <div class="bg-[#112240] p-6 rounded-lg shadow-lg text-center">
+        <h3 class="text-xl font-semibold text-[#64FFDA]">Maria</h3>
+        <p class="text-gray-400">Agent ds. komunikacji</p>
+      </div>
+      <div class="bg-[#112240] p-6 rounded-lg shadow-lg text-center">
+        <h3 class="text-xl font-semibold text-[#64FFDA]">Patryk</h3>
+        <p class="text-gray-400">Agent ds. cyberbezpieczeństwa</p>
+      </div>
+      <div class="bg-[#112240] p-6 rounded-lg shadow-lg text-center">
+        <h3 class="text-xl font-semibold text-[#64FFDA]">Ryszard</h3>
+        <p class="text-gray-400">Agent ds. innowacji</p>
+      </div>
+      <div class="bg-[#112240] p-6 rounded-lg shadow-lg text-center">
+        <h3 class="text-xl font-semibold text-[#64FFDA]">Agnieszka</h3>
+        <p class="text-gray-400">Agent ds. edukacji</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0A192F] py-6 text-center text-gray-400 text-sm">
+    © 2025 Baltic Digital Institute
+  </footer>
+</body>
 </html>
