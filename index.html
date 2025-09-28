@@ -1,85 +1,82 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baltic Digital Institute</title>
-
-  <!-- Tailwind CDN (tymczasowo) -->
+  <!-- Tailwind CSS przez CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Google Font Lato -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <style>body{font-family:'Lato',sans-serif}</style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', 'Lato', sans-serif; }
+  </style>
 </head>
-<body class="bg-[#0A192F] text-white min-h-screen">
+<body class="bg-[#0A192F] text-white">
 
   <!-- HEADER -->
-  <header class="bg-[#0A192F] fixed w-full z-50">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
-      <a href="index.html" class="text-xl font-bold text-[#00F6D2]">BDI</a>
-
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="index.html" class="hover:text-[#00F6D2]">Start</a></li>
-        <li><a href="o-nas.html" class="hover:text-[#00F6D2]">O nas</a></li>
-        <li><a href="rozwiazania.html" class="hover:text-[#00F6D2]">Rozwiązania</a></li>
-        <li><a href="kontakt.html" class="hover:text-[#00F6D2]">Kontakt</a></li>
-      </ul>
-
-      <button id="menu-btn" class="md:hidden text-2xl" aria-label="menu">☰</button>
-    </nav>
-
-    <!-- mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-[#1F2937]">
-      <a class="block px-4 py-3" href="index.html">Start</a>
-      <a class="block px-4 py-3" href="o-nas.html">O nas</a>
-      <a class="block px-4 py-3" href="rozwiazania.html">Rozwiązania</a>
-      <a class="block px-4 py-3" href="kontakt.html">Kontakt</a>
+  <header class="flex items-center justify-between px-6 py-4 bg-[#0A192F]/90 fixed w-full top-0 z-50">
+    <div class="flex items-center space-x-3">
+      <img src="assets/svg/Logo main.svg" alt="BDI Logo" class="h-10">
+      <span class="text-xl font-bold">Baltic Digital Institute</span>
     </div>
+    <nav class="hidden md:flex space-x-6 text-white font-medium">
+      <a href="index.html" class="hover:text-[#64FFDA]">Strona główna</a>
+      <a href="o-nas.html" class="hover:text-[#64FFDA]">O nas</a>
+      <a href="rozwiazania.html" class="hover:text-[#64FFDA]">Rozwiązania</a>
+      <a href="kontakt.html" class="hover:text-[#64FFDA]">Kontakt</a>
+    </nav>
+    <!-- Hamburger -->
+    <button id="menu-btn" class="md:hidden flex flex-col space-y-1">
+      <span class="block w-6 h-0.5 bg-white"></span>
+      <span class="block w-6 h-0.5 bg-white"></span>
+      <span class="block w-6 h-0.5 bg-white"></span>
+    </button>
   </header>
 
-  <!-- HERO -->
-  <main class="pt-24">
-    <section class="text-center py-20">
-      <div class="max-w-3xl mx-auto px-4">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Baltic Digital Institute</h1>
-        <p class="text-gray-300 mb-6">AI, Cyberbezpieczeństwo i Innowacje dla organizacji.</p>
-        <div class="flex justify-center gap-4">
-          <a href="rozwiazania.html" class="bg-[#00F6D2] text-black px-6 py-3 rounded font-bold">Nasze rozwiązania</a>
-          <a href="o-nas.html" class="border border-[#00F6D2] px-6 py-3 rounded text-[#00F6D2]">O nas</a>
-        </div>
-      </div>
-    </section>
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="hidden md:hidden fixed top-16 left-0 w-full bg-[#0A192F]/95 text-center space-y-4 py-6">
+    <a href="index.html" class="block text-lg hover:text-[#64FFDA]">Strona główna</a>
+    <a href="o-nas.html" class="block text-lg hover:text-[#64FFDA]">O nas</a>
+    <a href="rozwiazania.html" class="block text-lg hover:text-[#64FFDA]">Rozwiązania</a>
+    <a href="kontakt.html" class="block text-lg hover:text-[#64FFDA]">Kontakt</a>
+  </div>
 
-    <!-- szybki przegląd 3 filarów -->
-    <section class="py-16 max-w-6xl mx-auto px-4">
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-[#1F2937] p-6 rounded-lg">
-          <h3 class="text-xl font-bold text-[#00F6D2] mb-2">AI dla Biznesu</h3>
-          <p class="text-gray-300">Automatyzacja, predykcja i inteligentne wsparcie decyzji.</p>
-        </div>
-        <div class="bg-[#1F2937] p-6 rounded-lg">
-          <h3 class="text-xl font-bold text-[#00F6D2] mb-2">Cyberbezpieczeństwo</h3>
-          <p class="text-gray-300">Ochrona systemów, audyty i monitoring.</p>
-        </div>
-        <div class="bg-[#1F2937] p-6 rounded-lg">
-          <h3 class="text-xl font-bold text-[#00F6D2] mb-2">Edukacja</h3>
-          <p class="text-gray-300">Szkolenia i programy rozwoju kompetencji cyfrowych.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+  <!-- HERO -->
+  <section class="relative h-screen flex items-center justify-center text-center">
+    <img src="assets/img/Architekci cyfrowej odporności.png" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover opacity-30">
+    <div class="relative z-10 max-w-2xl mx-auto px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Architekci Cyfrowej Odporności</h1>
+      <p class="text-lg md:text-xl text-gray-200 mb-8">
+        Baltic Digital Institute – Twoi partnerzy w AI, cyberbezpieczeństwie i cyfrowej transformacji.
+      </p>
+      <a href="kontakt.html" class="inline-block bg-[#64FFDA] text-[#0A192F] font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-[#52e3c2] transition">
+        Skontaktuj się z nami
+      </a>
+    </div>
+  </section>
+
+  <!-- O NAS (placeholder) -->
+  <section class="py-20 bg-[#0A192F] text-center px-6">
+    <h2 class="text-3xl font-bold mb-6">Kim jesteśmy?</h2>
+    <p class="max-w-3xl mx-auto text-gray-300 leading-relaxed">
+      Baltic Digital Institute to organizacja non-profit, która łączy naukę, biznes i sektor publiczny. Naszą misją jest
+      budowanie cyfrowej odporności Europy poprzez rozwój sztucznej inteligencji, cyberbezpieczeństwa i odpowiedzialnej transformacji cyfrowej.
+    </p>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="bg-[#1F2937] text-center py-6 mt-12">
-    <p class="text-gray-400 text-sm">© 2025 Baltic Digital Institute</p>
+  <footer class="bg-[#0A192F]/90 py-6 text-center text-gray-400 text-sm">
+    © 2025 Baltic Digital Institute. Wszelkie prawa zastrzeżone.
   </footer>
 
+  <!-- Script menu -->
   <script>
-    // prosty mobile menu toggle
-    const btn = document.getElementById('menu-btn');
-    const mobile = document.getElementById('mobile-menu');
-    btn.addEventListener('click', () => mobile.classList.toggle('hidden'));
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
   </script>
 </body>
 </html>
