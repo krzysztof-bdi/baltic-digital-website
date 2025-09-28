@@ -1,0 +1,77 @@
+/* Global styles for Baltic Digital Institute website */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0A192F;
+  color: #F9FAFB;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0A192F;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.navbar a {
+  color: #64FFDA;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #F9FAFB;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(to right, rgba(10, 25, 47, 0.95), rgba(10, 25, 47, 0.85)),
+              url('assets/img/hero-bg.jpg') center/cover no-repeat;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #64FFDA;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #64FFDA;
+  color: #0A192F;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45cbb0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  background-color: #0A192F;
+  border-top: 1px solid rgba(100, 255, 218, 0.2);
+  font-size: 0.875rem;
+}
