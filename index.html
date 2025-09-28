@@ -5,60 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baltic Digital Institute</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="assets/svg/Logo main.svg">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-baltic-navy text-gray-100">
 
   <!-- Navbar -->
-  <header class="fixed w-full bg-white shadow z-50">
-    <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-      <a href="index.html">
-        <img src="assets/svg/Logo main.svg" alt="Baltic Digital Institute" class="h-10">
-      </a>
-      <ul class="hidden md:flex space-x-6 font-medium">
-        <li><a href="index.html" class="hover:text-cyan-600">Strona główna</a></li>
-        <li><a href="o-nas.html" class="hover:text-cyan-600">O nas</a></li>
-        <li><a href="rozwiazania.html" class="hover:text-cyan-600">Rozwiązania</a></li>
-        <li><a href="kontakt.html" class="hover:text-cyan-600">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar flex justify-between items-center">
+    <a href="index.html" class="text-xl font-bold text-cyber-turq">BDI</a>
+    <div class="hidden md:flex space-x-6">
+      <a href="rozwiazania.html">Rozwiązania</a>
+      <a href="o-nas.html">O nas</a>
+      <a href="inicjatywy.html">Inicjatywy</a>
+      <a href="baza-wiedzy.html">Baza wiedzy</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
 
-  <!-- Hero -->
-  <section class="relative bg-gray-900 text-white min-h-screen flex items-center">
-    <img src="assets/img/Architekci cyfrowej odporności.png" alt="Hero" class="absolute inset-0 w-full h-full object-cover opacity-40">
-    <div class="relative max-w-4xl mx-auto text-center px-6">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6">Baltic Digital Institute</h1>
-      <p class="text-xl md:text-2xl mb-8">Architekci cyfrowej odporności w regionie Morza Bałtyckiego</p>
-      <a href="o-nas.html" class="px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg shadow">Poznaj nas</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Budujemy Cyfrową Odporność z Mocą AI</h1>
+    <p>Projektujemy i wdrażamy zaawansowane rozwiązania z zakresu AI i cyberbezpieczeństwa, które dają naszym partnerom przewagę konkurencyjną i budują bezpieczną cyfrową przyszłość.</p>
+    <a href="rozwiazania.html" class="btn mt-6">Poznaj nasze rozwiązania dla biznesu</a>
+  </section>
+
+  <!-- Nasze Rozwiązania -->
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-cyber-turq mb-12">Nasze Rozwiązania</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <a href="rozwiazania-transformacja.html" class="bg-dark-steel p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-cyber-turq">Transformacja Cyfrowa i Wdrożenia</h3>
+        <p class="mt-3">Projektujemy i wdrażamy zintegrowane systemy operacji przychodowych (RevOps), które automatyzują procesy i skalują sprzedaż.</p>
+      </a>
+      <a href="rozwiazania-szkolenia.html" class="bg-dark-steel p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-cyber-turq">Szkolenia Specjalistyczne</h3>
+        <p class="mt-3">Wyposażamy zespoły w kompetencje przyszłości poprzez elitarne szkolenia z zakresu AI i cyberbezpieczeństwa, dostępne z dofinansowaniem.</p>
+      </a>
+      <a href="rozwiazania-badania.html" class="bg-dark-steel p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-cyber-turq">Badania i Certyfikacja</h3>
+        <p class="mt-3">Budujemy regionalne centrum doskonałości, które będzie wyznaczać standardy bezpieczeństwa i jakości dla technologii jutra.</p>
+      </a>
     </div>
   </section>
 
-  <!-- Filar cards -->
-  <section class="py-20 max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-12">Nasze filary</h2>
+  <!-- Dowody Wiarygodności -->
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-cyber-turq mb-12">Zaufali nam Liderzy</h2>
+    <div class="space-y-8">
+      <p class="bg-dark-steel p-6 rounded-xl shadow">Zaufał nam wiodący obiekt rekreacyjno-wypoczynkowy na Pomorzu, powierzając nam budowę cyfrowych kanałów sprzedaży.</p>
+      <p class="bg-dark-steel p-6 rounded-xl shadow">Jesteśmy partnerem w strategicznej, międzynarodowej inicjatywie Baltic AI Gigafactory, koordynowanej przez Ministerstwo Cyfryzacji.</p>
+      <div class="bg-dark-steel p-6 rounded-xl shadow">
+        <p>Certyfikaty i rejestry:</p>
+        <ul class="list-disc ml-6 mt-2">
+          <li>ISO 9001:2015</li>
+          <li>Baza Usług Rozwojowych</li>
+          <li>Rejestr Instytucji Szkoleniowych</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Baza Wiedzy -->
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-cyber-turq mb-12">Najnowsze Analizy</h2>
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="p-6 border rounded-xl shadow hover:shadow-lg bg-white">
-        <div class="text-cyan-600 text-4xl mb-4">🤖</div>
-        <h3 class="text-xl font-semibold mb-2">Sztuczna Inteligencja</h3>
-        <p class="text-gray-600">Wdrażamy AI w edukacji, administracji i biznesie, zwiększając efektywność i innowacyjność.</p>
-      </div>
-      <div class="p-6 border rounded-xl shadow hover:shadow-lg bg-white">
-        <div class="text-cyan-600 text-4xl mb-4">🔒</div>
-        <h3 class="text-xl font-semibold mb-2">Cyberbezpieczeństwo</h3>
-        <p class="text-gray-600">Chronimy dane i systemy, budując bezpieczną przestrzeń cyfrową w regionie Morza Bałtyckiego.</p>
-      </div>
-      <div class="p-6 border rounded-xl shadow hover:shadow-lg bg-white">
-        <div class="text-cyan-600 text-4xl mb-4">🌍</div>
-        <h3 class="text-xl font-semibold mb-2">Cyfrowa odporność</h3>
-        <p class="text-gray-600">Tworzymy strategie cyfrowe wzmacniające odporność organizacji i społeczeństw.</p>
-      </div>
+      <div class="bg-dark-steel p-6 rounded-xl shadow">📄 Artykuł 1 (placeholder)</div>
+      <div class="bg-dark-steel p-6 rounded-xl shadow">📄 Artykuł 2 (placeholder)</div>
+      <div class="bg-dark-steel p-6 rounded-xl shadow">📄 Artykuł 3 (placeholder)</div>
+    </div>
+    <div class="text-center mt-8">
+      <a href="baza-wiedzy.html" class="btn">Zobacz wszystkie</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 py-8 text-center text-sm text-gray-600">
+  <footer>
     © 2025 Baltic Digital Institute. Wszystkie prawa zastrzeżone.
   </footer>
+
 </body>
 </html>
